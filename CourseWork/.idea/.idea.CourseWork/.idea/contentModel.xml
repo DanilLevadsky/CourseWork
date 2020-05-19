@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_CourseWork.-645098325.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$/../Budget" t="IncludeRecursive">
+      <e p="ActivityOrProduct.cs" t="Include" />
+      <e p="BankAccount.cs" t="Include" />
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="Budget.csproj" t="IncludeRecursive" />
+      <e p="InfoAboutDeal.cs" t="Include" />
+      <e p="obj" t="ExcludeRecursive">
+        <e p="Debug" t="Include">
+          <e p="netcoreapp3.1" t="Include">
+            <e p="Budget.AssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Wallet.cs" t="Include" />
+      <e p="WalletHandlerArgs.cs" t="Include" />
+    </e>
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="BankCards" t="Include" />
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="CourseWork.csproj" t="IncludeRecursive" />
+      <e p="CourseWork.sln" t="IncludeFlat" />
+      <e p="exceptions.log" t="Include" />
+      <e p="obj" t="ExcludeRecursive">
+        <e p="Debug" t="Include">
+          <e p="netcoreapp3.1" t="Include">
+            <e p="CourseWork.AssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Program.cs" t="Include" />
+    </e>
+    <e p="$PROJECT_DIR$/../LogsAndExceptions" t="IncludeRecursive">
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="Logs.cs" t="Include" />
+      <e p="LogsAndExceptions.csproj" t="IncludeRecursive" />
+      <e p="obj" t="ExcludeRecursive">
+        <e p="Debug" t="Include">
+          <e p="netcoreapp3.1" t="Include">
+            <e p="LogsAndExceptions.AssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+    </e>
+    <e p="$PROJECT_DIR$/../Users" t="IncludeRecursive">
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive">
+        <e p="Debug" t="Include">
+          <e p="netcoreapp3.1" t="Include">
+            <e p="Users.AssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="User.cs" t="Include" />
+      <e p="Users.csproj" t="IncludeRecursive" />
+    </e>
+  </component>
+</project>

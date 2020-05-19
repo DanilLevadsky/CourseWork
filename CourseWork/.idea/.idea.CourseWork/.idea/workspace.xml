@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e1cfdc6a-3737-4f57-94ea-78871932bd70" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../LogsAndExceptions/Logs.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Users/User.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Budget/InfoAboutDeal.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Budget/BankAccount.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Budget/Wallet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/231CAC4C-D307-4AEA-83F1-76589F64BFB3/3A4/List.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Budget/WalletHandlerArgs.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Budget/ActivityOrProduct.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Program.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Reporting.cs" />
+        <option value="$PROJECT_DIR$/User.cs" />
+        <option value="$PROJECT_DIR$/IReportable.cs" />
+        <option value="$PROJECT_DIR$/WalletHandlerArgs.cs" />
+        <option value="$PROJECT_DIR$/ActivityOrProduct.cs" />
+        <option value="$PROJECT_DIR$/Wallet.cs" />
+        <option value="$PROJECT_DIR$/Log.cs" />
+        <option value="$PROJECT_DIR$/LogsAndExceptions/Program.cs" />
+        <option value="$PROJECT_DIR$/../LogsAndExceptions/Class1.cs" />
+        <option value="$PROJECT_DIR$/BankAccount.cs" />
+        <option value="$PROJECT_DIR$/../Users/Class1.cs" />
+        <option value="$PROJECT_DIR$/../Budget/Class1.cs" />
+        <option value="$PROJECT_DIR$/CourseWork.csproj" />
+        <option value="$PROJECT_DIR$/../LogsAndExceptions/LogsAndExceptions.csproj" />
+        <option value="$PROJECT_DIR$/../LogsAndExceptions/Logs.cs" />
+        <option value="$PROJECT_DIR$/../Users/CustomList.cs" />
+        <option value="$PROJECT_DIR$/../Users/Users.csproj" />
+        <option value="$PROJECT_DIR$/../Budget/Budget.csproj" />
+        <option value="$PROJECT_DIR$/../Budget/InfoAboutDeal.cs" />
+        <option value="$PROJECT_DIR$/../Budget/WalletHandlerArgs.cs" />
+        <option value="$PROJECT_DIR$/../Budget/ActivityOrProduct.cs" />
+        <option value="$PROJECT_DIR$/../Budget/Wallet.cs" />
+        <option value="$PROJECT_DIR$/../Users/User.cs" />
+        <option value="$PROJECT_DIR$/Program.cs" />
+        <option value="$PROJECT_DIR$/../Budget/BankAccount.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1bLZL5RtMwB27Nx55O3tlVvJANp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TWShift.4" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration name="CourseWork" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/CourseWork.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e1cfdc6a-3737-4f57-94ea-78871932bd70" name="Default Changelist" comment="" />
+      <created>1588413277439</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588413277439</updated>
+      <workItem from="1588413286750" duration="3032000" />
+      <workItem from="1589619923624" duration="24089000" />
+      <workItem from="1589744343214" duration="14633000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="WindowStateProjectService">
+    <state width="1398" height="662" key="GridCell.Tab.0.bottom" timestamp="1589894751763">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="662" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1589894751763" />
+    <state width="1398" height="662" key="GridCell.Tab.0.center" timestamp="1589894751760">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="662" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1589894751760" />
+    <state width="1398" height="662" key="GridCell.Tab.0.left" timestamp="1589894751758">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="662" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1589894751758" />
+    <state width="1398" height="60" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1589658412059" />
+    <state width="1398" height="662" key="GridCell.Tab.0.right" timestamp="1589894751762">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="662" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1589894751762" />
+    <state x="320" y="189" key="Rider.ProjectTemplateDialog.Size" timestamp="1589663989104">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state x="320" y="189" key="Rider.ProjectTemplateDialog.Size/0.0.1440.900@0.0.1440.900" timestamp="1589660359169" />
+    <state x="320" y="189" key="Rider.ProjectTemplateDialog.Size/0.23.1440.826@0.23.1440.826" timestamp="1589663989104" />
+    <state x="482" y="71" key="RiderGenerateDialog" timestamp="1589720745758">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="482" y="71" key="RiderGenerateDialog/0.0.1440.900@0.0.1440.900" timestamp="1589720745758" />
+    <state x="229" y="89" key="SettingsEditor" timestamp="1589721725775">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1589721725775" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1589729102003">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1589729102003" />
+  </component>
+</project>

@@ -1,0 +1,147 @@
+Created date: 05/16/2020 22:26:22
+
+05/16/2020 22:26:22: System.ArgumentException: Negative Balance
+
+05/16/2020 22:26:22: System.ArgumentException: Negative Balance
+
+05/16/2020 22:28:29: System.ArgumentException: Negative Balance
+
+05/16/2020 22:28:29: System.ArgumentException: Negative Balance
+
+05/16/2020 22:30:08: System.ArgumentException: Negative Balance
+
+05/16/2020 22:30:08: System.ArgumentException: Negative Balance
+
+05/16/2020 22:31:18: System.ArgumentException: Negative Balance
+
+05/16/2020 22:31:18: System.ArgumentException: Negative Balance
+
+05/16/2020 22:32:01: System.ArgumentException: Negative Balance
+
+05/16/2020 22:32:01: System.ArgumentException: Negative Balance
+
+05/16/2020 22:33:14: System.ArgumentException: Negative Balance
+
+05/16/2020 22:33:14: System.ArgumentException: Negative Balance
+
+05/16/2020 22:46:53: System.ArgumentException: Negative Balance
+
+05/16/2020 22:46:53: System.ArgumentException: Negative Balance
+
+05/16/2020 23:17:25: System.ArgumentException: Negative Balance
+
+05/16/2020 23:17:25: System.ArgumentException: Negative Balance
+
+05/17/2020 15:47:41: System.ArgumentException: Negative Balance
+
+05/17/2020 15:47:41: System.ArgumentException: Negative Balance
+
+05/17/2020 16:17:39: System.ArgumentException: Negative Balance
+
+05/17/2020 16:17:39: System.ArgumentException: Negative Balance
+
+05/17/2020 16:21:24: System.ArgumentException: Negative Balance
+
+05/17/2020 16:21:24: System.ArgumentException: Negative Balance
+
+05/17/2020 18:22:43: System.ArgumentException: Negative Balance
+
+05/17/2020 18:22:43: System.ArgumentException: Negative Balance
+
+05/17/2020 18:23:27: System.ArgumentException: Negative Balance
+
+05/17/2020 18:23:27: System.ArgumentException: Negative Balance
+
+05/17/2020 18:26:50: System.ArgumentException: Negative Balance
+
+05/17/2020 18:26:50: System.ArgumentException: Negative Balance
+
+05/17/2020 18:28:01: System.ArgumentException: Negative Balance
+
+05/17/2020 18:28:01: System.ArgumentException: Negative Balance
+
+05/17/2020 18:29:27: System.ArgumentException: Negative Balance
+
+05/17/2020 18:29:27: System.ArgumentException: Negative Balance
+
+05/17/2020 18:30:35: System.ArgumentException: Negative Balance
+
+05/17/2020 18:30:35: System.ArgumentException: Negative Balance
+
+05/17/2020 18:32:56: System.ArgumentException: Negative Balance
+
+05/17/2020 18:32:56: System.ArgumentException: Negative Balance
+
+05/19/2020 14:33:54: System.Exception: You don`t have enough cards.
+
+05/19/2020 14:36:03: System.Exception: You don`t have enough cards.
+
+05/19/2020 14:45:38: System.Exception: You don`t have enough cards.
+
+05/19/2020 14:45:38: System.Exception: Имеется недостаточно карт.
+   at Users.User.ChooseTwoCards() in /Users/danillevadsky/RiderProjects/CourseWork/Users/User.cs:line 57
+   at CourseWork.Program.Main(String[] args) in /Users/danillevadsky/RiderProjects/CourseWork/CourseWork/Program.cs:line 42
+
+05/19/2020 14:45:43: System.Exception: You don`t have enough cards.
+
+05/19/2020 14:45:43: System.Exception: Имеется недостаточно карт.
+   at Users.User.ChooseTwoCards() in /Users/danillevadsky/RiderProjects/CourseWork/Users/User.cs:line 57
+   at CourseWork.Program.Main(String[] args) in /Users/danillevadsky/RiderProjects/CourseWork/CourseWork/Program.cs:line 54
+
+05/19/2020 14:48:15: System.Exception: You don`t have enough cards.
+
+05/19/2020 14:48:15: System.Exception: Имеется недостаточно карт.
+   at Users.User.ChooseTwoCards() in /Users/danillevadsky/RiderProjects/CourseWork/Users/User.cs:line 57
+   at CourseWork.Program.Main(String[] args) in /Users/danillevadsky/RiderProjects/CourseWork/CourseWork/Program.cs:line 54
+
+05/19/2020 14:48:17: System.Exception: У вас нет карт.
+
+05/19/2020 15:54:11: System.Exception: У вас нет карт.
+
+05/19/2020 16:15:58: System.Exception: Имеется недостаточно карт.
+   at Users.User.ChooseTwoCards() in /Users/danillevadsky/RiderProjects/CourseWork/Users/User.cs:line 56
+   at CourseWork.Program.Main(String[] args) in /Users/danillevadsky/RiderProjects/CourseWork/CourseWork/Program.cs:line 46
+
+05/19/2020 16:16:33: System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Number.ParseDecimal(ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
+   at System.Convert.ToDecimal(String value)
+   at CourseWork.Program.CreateNewThing() in /Users/danillevadsky/RiderProjects/CourseWork/CourseWork/Program.cs:line 149
+
+05/19/2020 16:16:33: System.NullReferenceException: Object reference not set to an instance of an object.
+   at CourseWork.Program.Main(String[] args) in /Users/danillevadsky/RiderProjects/CourseWork/CourseWork/Program.cs:line 116
+
+05/19/2020 16:18:27: System.Exception: Имеется недостаточно карт.
+   at Users.User.ChooseTwoCards() in /Users/danillevadsky/RiderProjects/CourseWork/Users/User.cs:line 56
+   at CourseWork.Program.Main(String[] args) in /Users/danillevadsky/RiderProjects/CourseWork/CourseWork/Program.cs:line 58
+
+05/19/2020 16:20:30: System.Exception: У вас нет карт.
+
+05/19/2020 16:20:30: System.Exception: Not enough cards.
+   at Users.User.ChooseCard() in /Users/danillevadsky/RiderProjects/CourseWork/Users/User.cs:line 102
+   at CourseWork.Program.Main(String[] args) in /Users/danillevadsky/RiderProjects/CourseWork/CourseWork/Program.cs:line 122
+
+05/19/2020 16:21:16: System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Number.ParseDecimal(ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
+   at System.Convert.ToDecimal(String value)
+   at CourseWork.Program.Main(String[] args) in /Users/danillevadsky/RiderProjects/CourseWork/CourseWork/Program.cs:line 96
+
+05/19/2020 16:21:21: System.NullReferenceException: Object reference not set to an instance of an object.
+   at CourseWork.Program.Main(String[] args) in /Users/danillevadsky/RiderProjects/CourseWork/CourseWork/Program.cs:line 111
+
+05/19/2020 16:22:58: System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Number.ParseDecimal(ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
+   at System.Convert.ToDecimal(String value)
+   at CourseWork.Program.Main(String[] args) in /Users/danillevadsky/RiderProjects/CourseWork/CourseWork/Program.cs:line 96
+
+05/19/2020 16:23:03: System.NullReferenceException: Object reference not set to an instance of an object.
+   at CourseWork.Program.Main(String[] args) in /Users/danillevadsky/RiderProjects/CourseWork/CourseWork/Program.cs:line 111
+
+05/19/2020 16:26:27: System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Number.ParseDecimal(ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
+   at System.Convert.ToDecimal(String value)
+   at CourseWork.Program.Main(String[] args) in /Users/danillevadsky/RiderProjects/CourseWork/CourseWork/Program.cs:line 96
+

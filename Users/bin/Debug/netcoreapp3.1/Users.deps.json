@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Users/1.0.0": {
+        "dependencies": {
+          "Budget": "1.0.0",
+          "LogsAndExceptions": "1.0.0"
+        },
+        "runtime": {
+          "Users.dll": {}
+        }
+      },
+      "Budget/1.0.0": {
+        "dependencies": {
+          "LogsAndExceptions": "1.0.0"
+        },
+        "runtime": {
+          "Budget.dll": {}
+        }
+      },
+      "LogsAndExceptions/1.0.0": {
+        "runtime": {
+          "LogsAndExceptions.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Users/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Budget/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LogsAndExceptions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

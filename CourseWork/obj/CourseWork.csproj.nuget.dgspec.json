@@ -1,0 +1,238 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/danillevadsky/RiderProjects/CourseWork/CourseWork/CourseWork.csproj": {}
+  },
+  "projects": {
+    "/Users/danillevadsky/RiderProjects/CourseWork/Budget/Budget.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/danillevadsky/RiderProjects/CourseWork/Budget/Budget.csproj",
+        "projectName": "Budget",
+        "projectPath": "/Users/danillevadsky/RiderProjects/CourseWork/Budget/Budget.csproj",
+        "packagesPath": "/Users/danillevadsky/.nuget/packages/",
+        "outputPath": "/Users/danillevadsky/RiderProjects/CourseWork/Budget/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/danillevadsky/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/Users/danillevadsky/RiderProjects/CourseWork/LogsAndExceptions/LogsAndExceptions.csproj": {
+                "projectPath": "/Users/danillevadsky/RiderProjects/CourseWork/LogsAndExceptions/LogsAndExceptions.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/danillevadsky/RiderProjects/CourseWork/CourseWork/CourseWork.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/danillevadsky/RiderProjects/CourseWork/CourseWork/CourseWork.csproj",
+        "projectName": "CourseWork",
+        "projectPath": "/Users/danillevadsky/RiderProjects/CourseWork/CourseWork/CourseWork.csproj",
+        "packagesPath": "/Users/danillevadsky/.nuget/packages/",
+        "outputPath": "/Users/danillevadsky/RiderProjects/CourseWork/CourseWork/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/danillevadsky/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/Users/danillevadsky/RiderProjects/CourseWork/Budget/Budget.csproj": {
+                "projectPath": "/Users/danillevadsky/RiderProjects/CourseWork/Budget/Budget.csproj"
+              },
+              "/Users/danillevadsky/RiderProjects/CourseWork/Users/Users.csproj": {
+                "projectPath": "/Users/danillevadsky/RiderProjects/CourseWork/Users/Users.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/danillevadsky/RiderProjects/CourseWork/LogsAndExceptions/LogsAndExceptions.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/danillevadsky/RiderProjects/CourseWork/LogsAndExceptions/LogsAndExceptions.csproj",
+        "projectName": "LogsAndExceptions",
+        "projectPath": "/Users/danillevadsky/RiderProjects/CourseWork/LogsAndExceptions/LogsAndExceptions.csproj",
+        "packagesPath": "/Users/danillevadsky/.nuget/packages/",
+        "outputPath": "/Users/danillevadsky/RiderProjects/CourseWork/LogsAndExceptions/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/danillevadsky/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/danillevadsky/RiderProjects/CourseWork/Users/Users.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/danillevadsky/RiderProjects/CourseWork/Users/Users.csproj",
+        "projectName": "Users",
+        "projectPath": "/Users/danillevadsky/RiderProjects/CourseWork/Users/Users.csproj",
+        "packagesPath": "/Users/danillevadsky/.nuget/packages/",
+        "outputPath": "/Users/danillevadsky/RiderProjects/CourseWork/Users/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/danillevadsky/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/Users/danillevadsky/RiderProjects/CourseWork/Budget/Budget.csproj": {
+                "projectPath": "/Users/danillevadsky/RiderProjects/CourseWork/Budget/Budget.csproj"
+              },
+              "/Users/danillevadsky/RiderProjects/CourseWork/LogsAndExceptions/LogsAndExceptions.csproj": {
+                "projectPath": "/Users/danillevadsky/RiderProjects/CourseWork/LogsAndExceptions/LogsAndExceptions.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
