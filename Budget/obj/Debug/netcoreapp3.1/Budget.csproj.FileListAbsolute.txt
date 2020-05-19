@@ -9,3 +9,14 @@
 /Users/danillevadsky/RiderProjects/CourseWork/Budget/obj/Debug/netcoreapp3.1/Budget.csproj.CopyComplete
 /Users/danillevadsky/RiderProjects/CourseWork/Budget/obj/Debug/netcoreapp3.1/Budget.dll
 /Users/danillevadsky/RiderProjects/CourseWork/Budget/obj/Debug/netcoreapp3.1/Budget.pdb
+/Users/danillevadsky/RiderProjects/Course Work/Budget/bin/Debug/netcoreapp3.1/Budget.deps.json
+/Users/danillevadsky/RiderProjects/Course Work/Budget/bin/Debug/netcoreapp3.1/Budget.dll
+/Users/danillevadsky/RiderProjects/Course Work/Budget/bin/Debug/netcoreapp3.1/Budget.pdb
+/Users/danillevadsky/RiderProjects/Course Work/Budget/bin/Debug/netcoreapp3.1/LogsAndExceptions.dll
+/Users/danillevadsky/RiderProjects/Course Work/Budget/bin/Debug/netcoreapp3.1/LogsAndExceptions.pdb
+/Users/danillevadsky/RiderProjects/Course Work/Budget/obj/Debug/netcoreapp3.1/Budget.csprojAssemblyReference.cache
+/Users/danillevadsky/RiderProjects/Course Work/Budget/obj/Debug/netcoreapp3.1/Budget.AssemblyInfoInputs.cache
+/Users/danillevadsky/RiderProjects/Course Work/Budget/obj/Debug/netcoreapp3.1/Budget.AssemblyInfo.cs
+/Users/danillevadsky/RiderProjects/Course Work/Budget/obj/Debug/netcoreapp3.1/Budget.csproj.CopyComplete
+/Users/danillevadsky/RiderProjects/Course Work/Budget/obj/Debug/netcoreapp3.1/Budget.dll
+/Users/danillevadsky/RiderProjects/Course Work/Budget/obj/Debug/netcoreapp3.1/Budget.pdb

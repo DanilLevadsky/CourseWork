@@ -46,6 +46,12 @@ namespace Budget
 
         public override void GetMoney(decimal sum)
         {
+            if (sum > this.Balance)
+            {
+                Logs.LogException(new ArgumentException("You don`t have enough money."));
+                EmptyWallet?.Invoke(this, new WalletHandlerArgs("Недостаточно денег на счету."));
+                return;
+            }
             if (sum < 0)
             {
                 Logs.LogException(new ArgumentException("You can`t get a negative amount of money."));

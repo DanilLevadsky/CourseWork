@@ -8,7 +8,7 @@ namespace LogsAndExceptions
 
         public static void LogException(params Exception[] e)
         {
-            const string fileName = "/Users/danillevadsky/RiderProjects/CourseWork/CourseWork/exceptions.log";
+            var fileName = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName,"exceptions.log");
 
             void WriteToFile(TextWriter sw)
             {

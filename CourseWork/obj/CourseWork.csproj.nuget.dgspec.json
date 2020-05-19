@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/danillevadsky/RiderProjects/CourseWork/CourseWork/CourseWork.csproj": {}
+    "/Users/danillevadsky/RiderProjects/Course Work/CourseWork/CourseWork.csproj": {}
   },
   "projects": {
-    "/Users/danillevadsky/RiderProjects/CourseWork/Budget/Budget.csproj": {
+    "/Users/danillevadsky/RiderProjects/Course Work/Budget/Budget.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/danillevadsky/RiderProjects/CourseWork/Budget/Budget.csproj",
+        "projectUniqueName": "/Users/danillevadsky/RiderProjects/Course Work/Budget/Budget.csproj",
         "projectName": "Budget",
-        "projectPath": "/Users/danillevadsky/RiderProjects/CourseWork/Budget/Budget.csproj",
+        "projectPath": "/Users/danillevadsky/RiderProjects/Course Work/Budget/Budget.csproj",
         "packagesPath": "/Users/danillevadsky/.nuget/packages/",
-        "outputPath": "/Users/danillevadsky/RiderProjects/CourseWork/Budget/obj/",
+        "outputPath": "/Users/danillevadsky/RiderProjects/Course Work/Budget/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -28,8 +28,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "/Users/danillevadsky/RiderProjects/CourseWork/LogsAndExceptions/LogsAndExceptions.csproj": {
-                "projectPath": "/Users/danillevadsky/RiderProjects/CourseWork/LogsAndExceptions/LogsAndExceptions.csproj"
+              "/Users/danillevadsky/RiderProjects/Course Work/LogsAndExceptions/LogsAndExceptions.csproj": {
+                "projectPath": "/Users/danillevadsky/RiderProjects/Course Work/LogsAndExceptions/LogsAndExceptions.csproj"
               }
             }
           }
@@ -61,14 +61,14 @@
         }
       }
     },
-    "/Users/danillevadsky/RiderProjects/CourseWork/CourseWork/CourseWork.csproj": {
+    "/Users/danillevadsky/RiderProjects/Course Work/CourseWork/CourseWork.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/danillevadsky/RiderProjects/CourseWork/CourseWork/CourseWork.csproj",
+        "projectUniqueName": "/Users/danillevadsky/RiderProjects/Course Work/CourseWork/CourseWork.csproj",
         "projectName": "CourseWork",
-        "projectPath": "/Users/danillevadsky/RiderProjects/CourseWork/CourseWork/CourseWork.csproj",
+        "projectPath": "/Users/danillevadsky/RiderProjects/Course Work/CourseWork/CourseWork.csproj",
         "packagesPath": "/Users/danillevadsky/.nuget/packages/",
-        "outputPath": "/Users/danillevadsky/RiderProjects/CourseWork/CourseWork/obj/",
+        "outputPath": "/Users/danillevadsky/RiderProjects/Course Work/CourseWork/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -85,11 +85,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "/Users/danillevadsky/RiderProjects/CourseWork/Budget/Budget.csproj": {
-                "projectPath": "/Users/danillevadsky/RiderProjects/CourseWork/Budget/Budget.csproj"
+              "/Users/danillevadsky/RiderProjects/Course Work/Budget/Budget.csproj": {
+                "projectPath": "/Users/danillevadsky/RiderProjects/Course Work/Budget/Budget.csproj"
               },
-              "/Users/danillevadsky/RiderProjects/CourseWork/Users/Users.csproj": {
-                "projectPath": "/Users/danillevadsky/RiderProjects/CourseWork/Users/Users.csproj"
+              "/Users/danillevadsky/RiderProjects/Course Work/Users/Users.csproj": {
+                "projectPath": "/Users/danillevadsky/RiderProjects/Course Work/Users/Users.csproj"
               }
             }
           }
@@ -121,14 +121,14 @@
         }
       }
     },
-    "/Users/danillevadsky/RiderProjects/CourseWork/LogsAndExceptions/LogsAndExceptions.csproj": {
+    "/Users/danillevadsky/RiderProjects/Course Work/LogsAndExceptions/LogsAndExceptions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/danillevadsky/RiderProjects/CourseWork/LogsAndExceptions/LogsAndExceptions.csproj",
+        "projectUniqueName": "/Users/danillevadsky/RiderProjects/Course Work/LogsAndExceptions/LogsAndExceptions.csproj",
         "projectName": "LogsAndExceptions",
-        "projectPath": "/Users/danillevadsky/RiderProjects/CourseWork/LogsAndExceptions/LogsAndExceptions.csproj",
+        "projectPath": "/Users/danillevadsky/RiderProjects/Course Work/LogsAndExceptions/LogsAndExceptions.csproj",
         "packagesPath": "/Users/danillevadsky/.nuget/packages/",
-        "outputPath": "/Users/danillevadsky/RiderProjects/CourseWork/LogsAndExceptions/obj/",
+        "outputPath": "/Users/danillevadsky/RiderProjects/Course Work/LogsAndExceptions/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -174,14 +174,14 @@
         }
       }
     },
-    "/Users/danillevadsky/RiderProjects/CourseWork/Users/Users.csproj": {
+    "/Users/danillevadsky/RiderProjects/Course Work/Users/Users.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/danillevadsky/RiderProjects/CourseWork/Users/Users.csproj",
+        "projectUniqueName": "/Users/danillevadsky/RiderProjects/Course Work/Users/Users.csproj",
         "projectName": "Users",
-        "projectPath": "/Users/danillevadsky/RiderProjects/CourseWork/Users/Users.csproj",
+        "projectPath": "/Users/danillevadsky/RiderProjects/Course Work/Users/Users.csproj",
         "packagesPath": "/Users/danillevadsky/.nuget/packages/",
-        "outputPath": "/Users/danillevadsky/RiderProjects/CourseWork/Users/obj/",
+        "outputPath": "/Users/danillevadsky/RiderProjects/Course Work/Users/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -198,11 +198,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "/Users/danillevadsky/RiderProjects/CourseWork/Budget/Budget.csproj": {
-                "projectPath": "/Users/danillevadsky/RiderProjects/CourseWork/Budget/Budget.csproj"
+              "/Users/danillevadsky/RiderProjects/Course Work/Budget/Budget.csproj": {
+                "projectPath": "/Users/danillevadsky/RiderProjects/Course Work/Budget/Budget.csproj"
               },
-              "/Users/danillevadsky/RiderProjects/CourseWork/LogsAndExceptions/LogsAndExceptions.csproj": {
-                "projectPath": "/Users/danillevadsky/RiderProjects/CourseWork/LogsAndExceptions/LogsAndExceptions.csproj"
+              "/Users/danillevadsky/RiderProjects/Course Work/LogsAndExceptions/LogsAndExceptions.csproj": {
+                "projectPath": "/Users/danillevadsky/RiderProjects/Course Work/LogsAndExceptions/LogsAndExceptions.csproj"
               }
             }
           }

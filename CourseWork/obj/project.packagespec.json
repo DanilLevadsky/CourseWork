@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/Users/danillevadsky/RiderProjects/CourseWork/CourseWork/CourseWork.csproj",
+    "projectUniqueName": "/Users/danillevadsky/RiderProjects/Course Work/CourseWork/CourseWork.csproj",
     "projectName": "CourseWork",
-    "projectPath": "/Users/danillevadsky/RiderProjects/CourseWork/CourseWork/CourseWork.csproj",
-    "outputPath": "/Users/danillevadsky/RiderProjects/CourseWork/CourseWork/obj/",
+    "projectPath": "/Users/danillevadsky/RiderProjects/Course Work/CourseWork/CourseWork.csproj",
+    "outputPath": "/Users/danillevadsky/RiderProjects/Course Work/CourseWork/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -18,11 +18,11 @@
     "frameworks": {
       "netcoreapp3.1": {
         "projectReferences": {
-          "/Users/danillevadsky/RiderProjects/CourseWork/Budget/Budget.csproj": {
-            "projectPath": "/Users/danillevadsky/RiderProjects/CourseWork/Budget/Budget.csproj"
+          "/Users/danillevadsky/RiderProjects/Course Work/Budget/Budget.csproj": {
+            "projectPath": "/Users/danillevadsky/RiderProjects/Course Work/Budget/Budget.csproj"
           },
-          "/Users/danillevadsky/RiderProjects/CourseWork/Users/Users.csproj": {
-            "projectPath": "/Users/danillevadsky/RiderProjects/CourseWork/Users/Users.csproj"
+          "/Users/danillevadsky/RiderProjects/Course Work/Users/Users.csproj": {
+            "projectPath": "/Users/danillevadsky/RiderProjects/Course Work/Users/Users.csproj"
           }
         }
       }

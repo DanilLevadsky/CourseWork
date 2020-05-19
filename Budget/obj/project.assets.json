@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/danillevadsky/RiderProjects/CourseWork/Budget/Budget.csproj",
+      "projectUniqueName": "/Users/danillevadsky/RiderProjects/Course Work/Budget/Budget.csproj",
       "projectName": "Budget",
-      "projectPath": "/Users/danillevadsky/RiderProjects/CourseWork/Budget/Budget.csproj",
+      "projectPath": "/Users/danillevadsky/RiderProjects/Course Work/Budget/Budget.csproj",
       "packagesPath": "/Users/danillevadsky/.nuget/packages/",
-      "outputPath": "/Users/danillevadsky/RiderProjects/CourseWork/Budget/obj/",
+      "outputPath": "/Users/danillevadsky/RiderProjects/Course Work/Budget/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -54,8 +54,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "/Users/danillevadsky/RiderProjects/CourseWork/LogsAndExceptions/LogsAndExceptions.csproj": {
-              "projectPath": "/Users/danillevadsky/RiderProjects/CourseWork/LogsAndExceptions/LogsAndExceptions.csproj"
+            "/Users/danillevadsky/RiderProjects/Course Work/LogsAndExceptions/LogsAndExceptions.csproj": {
+              "projectPath": "/Users/danillevadsky/RiderProjects/Course Work/LogsAndExceptions/LogsAndExceptions.csproj"
             }
           }
         }

@@ -15,3 +15,20 @@
 /Users/danillevadsky/RiderProjects/CourseWork/CourseWork/obj/Debug/netcoreapp3.1/CourseWork.csproj.CopyComplete
 /Users/danillevadsky/RiderProjects/CourseWork/CourseWork/bin/Debug/netcoreapp3.1/Users.dll
 /Users/danillevadsky/RiderProjects/CourseWork/CourseWork/bin/Debug/netcoreapp3.1/Users.pdb
+/Users/danillevadsky/RiderProjects/Course Work/CourseWork/bin/Debug/netcoreapp3.1/CourseWork.deps.json
+/Users/danillevadsky/RiderProjects/Course Work/CourseWork/bin/Debug/netcoreapp3.1/CourseWork.runtimeconfig.json
+/Users/danillevadsky/RiderProjects/Course Work/CourseWork/bin/Debug/netcoreapp3.1/CourseWork.runtimeconfig.dev.json
+/Users/danillevadsky/RiderProjects/Course Work/CourseWork/bin/Debug/netcoreapp3.1/CourseWork.dll
+/Users/danillevadsky/RiderProjects/Course Work/CourseWork/bin/Debug/netcoreapp3.1/CourseWork.pdb
+/Users/danillevadsky/RiderProjects/Course Work/CourseWork/bin/Debug/netcoreapp3.1/Budget.dll
+/Users/danillevadsky/RiderProjects/Course Work/CourseWork/bin/Debug/netcoreapp3.1/LogsAndExceptions.dll
+/Users/danillevadsky/RiderProjects/Course Work/CourseWork/bin/Debug/netcoreapp3.1/Users.dll
+/Users/danillevadsky/RiderProjects/Course Work/CourseWork/bin/Debug/netcoreapp3.1/Budget.pdb
+/Users/danillevadsky/RiderProjects/Course Work/CourseWork/bin/Debug/netcoreapp3.1/Users.pdb
+/Users/danillevadsky/RiderProjects/Course Work/CourseWork/bin/Debug/netcoreapp3.1/LogsAndExceptions.pdb
+/Users/danillevadsky/RiderProjects/Course Work/CourseWork/obj/Debug/netcoreapp3.1/CourseWork.csprojAssemblyReference.cache
+/Users/danillevadsky/RiderProjects/Course Work/CourseWork/obj/Debug/netcoreapp3.1/CourseWork.AssemblyInfoInputs.cache
+/Users/danillevadsky/RiderProjects/Course Work/CourseWork/obj/Debug/netcoreapp3.1/CourseWork.AssemblyInfo.cs
+/Users/danillevadsky/RiderProjects/Course Work/CourseWork/obj/Debug/netcoreapp3.1/CourseWork.csproj.CopyComplete
+/Users/danillevadsky/RiderProjects/Course Work/CourseWork/obj/Debug/netcoreapp3.1/CourseWork.dll
+/Users/danillevadsky/RiderProjects/Course Work/CourseWork/obj/Debug/netcoreapp3.1/CourseWork.pdb

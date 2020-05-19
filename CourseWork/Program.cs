@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Net.Mime;
 using System.Runtime.CompilerServices;
+using System.Linq;
 using Budget;
 using LogsAndExceptions;
 using Users;
@@ -20,14 +21,23 @@ namespace CourseWork
         
         private static void Main(string[] args)
         {
-            Console.WriteLine("Введите ваше имя.");
-            var name = Console.ReadLine();
+            
+            var name = string.Empty;
+            while (name.Trim(' ') == "")
+            {
+                Console.Write("Введите ваше имя: ");
+                name = Console.ReadLine();
+                if (name.Trim(' ') != "") continue;
+                Console.WriteLine("Неверные данные.");
+                Logs.LogException(new ArgumentNullException("Nullable input."));
+            }
+            
             var usr = new User(name);
 
             while (true)
             {
                 Console.WriteLine(menu);
-                int key;
+                int key; 
                 try
                 {
                     key = int.Parse(Console.ReadLine());
@@ -41,7 +51,7 @@ namespace CourseWork
                 switch (key)
                 {
                     case 0:
-                        Console.WriteLine("Программа завершена.");
+                        Console.WriteLine($"Программа завершена. Хорошего вечера, {name}");
                         Environment.Exit(0);
                         break;
                     case 1:
@@ -80,6 +90,11 @@ namespace CourseWork
                             Console.WriteLine("Выберите карту: ");
                             var c = usr.ChooseCard();
                             obj = CreateNewThing();
+                            if (obj == null)
+                            {
+                                PrintError("Не удалось создать объект. Неверные данные.");
+                                break;
+                            }
                             c.SpendMoney(obj);
                         }
                         catch (Exception e)
@@ -90,26 +105,27 @@ namespace CourseWork
                         break;
                     case 5:
                         decimal m = 0;
-                        Console.WriteLine("Сколько денег хотите вывести?");
+                        Console.WriteLine($"{name} сколько денег Вы хотите вывести?");
                         try
                         {
                             m = Convert.ToDecimal(Console.ReadLine());
                             if (m.GetType() != typeof(decimal))
                             {
                                 break;
-                            } 
+                            }
+
+                            if (m < 0)
+                            {
+                                PrintError($"{name}, нельзя вывести отрицательную сумму.");
+                                Logs.LogException(new ArgumentException("You can`t withdraw negative sum."));
+                                break;
+                            }
                         }
                         catch (Exception e)
                         {
                             Logs.LogException(e);
                             break;
                         }
-                        if (m < 0)
-                        {
-                            Logs.LogException(new ArgumentException("You can`t withdraw negative sum."));
-                            break;
-                        }
-
                         var crd = usr.ChooseCard();
                         try
                         {
@@ -123,10 +139,15 @@ namespace CourseWork
                     case 6:
                         try
                         {
-                            Console.WriteLine("На какую карту будут зачислены деньги?");
+                            Console.WriteLine($"На какую карту будут зачислены деньги, {name}?");
                             card = usr.ChooseCard();
                             Console.WriteLine("Укажите источник денег.");
                             obj = CreateNewThing();
+                            if (obj == null)
+                            {
+                                PrintError("Не удалось создать объект. Неверные данные.");
+                                break;
+                            }
                             card.AddMoney(obj);
                         }
                         catch (Exception e)
@@ -168,9 +189,16 @@ namespace CourseWork
             catch (Exception e)
             {
                 Logs.LogException(e);
-                Console.WriteLine("Не удалось создать предмет.");
+                PrintError("Не удалось идентифицировать предмет/услугу.");
                 return null;
             }
         }
+
+        private static void PrintError(string message)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(message);
+            Console.ResetColor();
+        } 
     }
 }

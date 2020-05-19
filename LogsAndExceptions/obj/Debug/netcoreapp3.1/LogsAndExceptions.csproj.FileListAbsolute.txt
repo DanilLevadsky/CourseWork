@@ -6,3 +6,11 @@
 /Users/danillevadsky/RiderProjects/CourseWork/LogsAndExceptions/bin/Debug/netcoreapp3.1/LogsAndExceptions.pdb
 /Users/danillevadsky/RiderProjects/CourseWork/LogsAndExceptions/obj/Debug/netcoreapp3.1/LogsAndExceptions.dll
 /Users/danillevadsky/RiderProjects/CourseWork/LogsAndExceptions/obj/Debug/netcoreapp3.1/LogsAndExceptions.pdb
+/Users/danillevadsky/RiderProjects/Course Work/LogsAndExceptions/bin/Debug/netcoreapp3.1/LogsAndExceptions.deps.json
+/Users/danillevadsky/RiderProjects/Course Work/LogsAndExceptions/bin/Debug/netcoreapp3.1/LogsAndExceptions.dll
+/Users/danillevadsky/RiderProjects/Course Work/LogsAndExceptions/bin/Debug/netcoreapp3.1/LogsAndExceptions.pdb
+/Users/danillevadsky/RiderProjects/Course Work/LogsAndExceptions/obj/Debug/netcoreapp3.1/LogsAndExceptions.csprojAssemblyReference.cache
+/Users/danillevadsky/RiderProjects/Course Work/LogsAndExceptions/obj/Debug/netcoreapp3.1/LogsAndExceptions.AssemblyInfoInputs.cache
+/Users/danillevadsky/RiderProjects/Course Work/LogsAndExceptions/obj/Debug/netcoreapp3.1/LogsAndExceptions.AssemblyInfo.cs
+/Users/danillevadsky/RiderProjects/Course Work/LogsAndExceptions/obj/Debug/netcoreapp3.1/LogsAndExceptions.dll
+/Users/danillevadsky/RiderProjects/Course Work/LogsAndExceptions/obj/Debug/netcoreapp3.1/LogsAndExceptions.pdb

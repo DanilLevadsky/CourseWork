@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/Users/danillevadsky/RiderProjects/CourseWork/LogsAndExceptions/LogsAndExceptions.csproj",
+    "projectUniqueName": "/Users/danillevadsky/RiderProjects/Course Work/LogsAndExceptions/LogsAndExceptions.csproj",
     "projectName": "LogsAndExceptions",
-    "projectPath": "/Users/danillevadsky/RiderProjects/CourseWork/LogsAndExceptions/LogsAndExceptions.csproj",
-    "outputPath": "/Users/danillevadsky/RiderProjects/CourseWork/LogsAndExceptions/obj/",
+    "projectPath": "/Users/danillevadsky/RiderProjects/Course Work/LogsAndExceptions/LogsAndExceptions.csproj",
+    "outputPath": "/Users/danillevadsky/RiderProjects/Course Work/LogsAndExceptions/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

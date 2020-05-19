@@ -11,3 +11,16 @@
 /Users/danillevadsky/RiderProjects/CourseWork/Users/obj/Debug/netcoreapp3.1/Users.csproj.CopyComplete
 /Users/danillevadsky/RiderProjects/CourseWork/Users/bin/Debug/netcoreapp3.1/Budget.dll
 /Users/danillevadsky/RiderProjects/CourseWork/Users/bin/Debug/netcoreapp3.1/Budget.pdb
+/Users/danillevadsky/RiderProjects/Course Work/Users/bin/Debug/netcoreapp3.1/Users.deps.json
+/Users/danillevadsky/RiderProjects/Course Work/Users/bin/Debug/netcoreapp3.1/Users.dll
+/Users/danillevadsky/RiderProjects/Course Work/Users/bin/Debug/netcoreapp3.1/Users.pdb
+/Users/danillevadsky/RiderProjects/Course Work/Users/bin/Debug/netcoreapp3.1/Budget.dll
+/Users/danillevadsky/RiderProjects/Course Work/Users/bin/Debug/netcoreapp3.1/LogsAndExceptions.dll
+/Users/danillevadsky/RiderProjects/Course Work/Users/bin/Debug/netcoreapp3.1/Budget.pdb
+/Users/danillevadsky/RiderProjects/Course Work/Users/bin/Debug/netcoreapp3.1/LogsAndExceptions.pdb
+/Users/danillevadsky/RiderProjects/Course Work/Users/obj/Debug/netcoreapp3.1/Users.csprojAssemblyReference.cache
+/Users/danillevadsky/RiderProjects/Course Work/Users/obj/Debug/netcoreapp3.1/Users.AssemblyInfoInputs.cache
+/Users/danillevadsky/RiderProjects/Course Work/Users/obj/Debug/netcoreapp3.1/Users.AssemblyInfo.cs
+/Users/danillevadsky/RiderProjects/Course Work/Users/obj/Debug/netcoreapp3.1/Users.csproj.CopyComplete
+/Users/danillevadsky/RiderProjects/Course Work/Users/obj/Debug/netcoreapp3.1/Users.dll
+/Users/danillevadsky/RiderProjects/Course Work/Users/obj/Debug/netcoreapp3.1/Users.pdb

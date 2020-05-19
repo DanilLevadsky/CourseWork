@@ -7,7 +7,7 @@ namespace Budget
     {
         public static void LogToFile(string bankId, string name, decimal value, BankAccount card)
         {
-            var fileName = $"/Users/danillevadsky/RiderProjects/CourseWork/CourseWork/BankCards/{bankId}_card.log";
+            var fileName = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName,$"BankCards/{card._id}_info.log");
             
             void WriteToFile(TextWriter sw)
             {
