@@ -1,55 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e1cfdc6a-3737-4f57-94ea-78871932bd70" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Budget/BankAccount.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Budget/BankAccount.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/InfoAboutDeal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Budget/InfoAboutDeal.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/obj/Budget.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Budget/obj/Budget.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/obj/Budget.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Budget/obj/Budget.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/obj/Debug/netcoreapp3.1/Budget.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Budget/obj/Debug/netcoreapp3.1/Budget.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/obj/Debug/netcoreapp3.1/Budget.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Budget/obj/Debug/netcoreapp3.1/Budget.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/obj/Debug/netcoreapp3.1/Budget.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Budget/obj/Debug/netcoreapp3.1/Budget.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/obj/Debug/netcoreapp3.1/Budget.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Budget/obj/Debug/netcoreapp3.1/Budget.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/obj/Debug/netcoreapp3.1/Budget.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Budget/obj/Debug/netcoreapp3.1/Budget.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Budget/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Budget/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Budget/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CourseWork/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CourseWork/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CourseWork/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CourseWork/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Budget.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Budget.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Budget.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Budget.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/CourseWork.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/CourseWork.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/CourseWork.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/CourseWork.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/LogsAndExceptions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/LogsAndExceptions.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/LogsAndExceptions.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/LogsAndExceptions.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exceptions.log" beforeDir="false" afterPath="$PROJECT_DIR$/exceptions.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/CourseWork.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/CourseWork.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/CourseWork.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/CourseWork.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/CourseWork.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/CourseWork.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/CourseWork.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/CourseWork.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/CourseWork.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/CourseWork.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/CourseWork.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/CourseWork.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/CourseWork.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/CourseWork.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LogsAndExceptions/Logs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../LogsAndExceptions/Logs.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LogsAndExceptions/obj/Debug/netcoreapp3.1/LogsAndExceptions.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../LogsAndExceptions/obj/Debug/netcoreapp3.1/LogsAndExceptions.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LogsAndExceptions/obj/Debug/netcoreapp3.1/LogsAndExceptions.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../LogsAndExceptions/obj/Debug/netcoreapp3.1/LogsAndExceptions.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LogsAndExceptions/obj/Debug/netcoreapp3.1/LogsAndExceptions.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../LogsAndExceptions/obj/Debug/netcoreapp3.1/LogsAndExceptions.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LogsAndExceptions/obj/Debug/netcoreapp3.1/LogsAndExceptions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../LogsAndExceptions/obj/Debug/netcoreapp3.1/LogsAndExceptions.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LogsAndExceptions/obj/Debug/netcoreapp3.1/LogsAndExceptions.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../LogsAndExceptions/obj/Debug/netcoreapp3.1/LogsAndExceptions.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LogsAndExceptions/obj/LogsAndExceptions.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../LogsAndExceptions/obj/LogsAndExceptions.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LogsAndExceptions/obj/LogsAndExceptions.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../LogsAndExceptions/obj/LogsAndExceptions.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LogsAndExceptions/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../LogsAndExceptions/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LogsAndExceptions/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../LogsAndExceptions/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/obj/Debug/netcoreapp3.1/Users.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/obj/Debug/netcoreapp3.1/Users.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/obj/Debug/netcoreapp3.1/Users.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/obj/Debug/netcoreapp3.1/Users.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/obj/Debug/netcoreapp3.1/Users.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/obj/Debug/netcoreapp3.1/Users.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/obj/Users.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/obj/Users.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/obj/Users.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/obj/Users.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/obj/project.packagespec.json" afterDir="false" />
-    </list>
+    <list default="true" id="e1cfdc6a-3737-4f57-94ea-78871932bd70" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -158,7 +110,7 @@
       <workItem from="1588413286750" duration="3032000" />
       <workItem from="1589619923624" duration="24089000" />
       <workItem from="1589744343214" duration="14633000" />
-      <workItem from="1589907655671" duration="3821000" />
+      <workItem from="1589907655671" duration="4107000" />
     </task>
     <servers />
   </component>
