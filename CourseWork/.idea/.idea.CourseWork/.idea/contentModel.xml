@@ -20,11 +20,7 @@
       <e p="WalletHandlerArgs.cs" t="Include" />
     </e>
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
-      <e p="BankCards" t="Include">
-        <e p="exceptions.log" t="Include" />
-        <e p="nagibator228_info.log" t="Include" />
-        <e p="sexxx_info.log" t="Include" />
-      </e>
+      <e p="BankCards" t="Include" />
       <e p="bin" t="ExcludeRecursive" />
       <e p="CourseWork.csproj" t="IncludeRecursive" />
       <e p="CourseWork.sln" t="IncludeFlat" />
