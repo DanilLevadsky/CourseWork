@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Net.Mime;
-using System.Runtime.CompilerServices;
 using System.Linq;
 using Budget;
 using LogsAndExceptions;
@@ -23,13 +21,13 @@ namespace CourseWork
         {
             
             var name = string.Empty;
-            while (name.Trim(' ') == "")
+            while (name?.Trim(' ') == "")
             {
                 Console.Write("Введите ваше имя: ");
                 name = Console.ReadLine();
-                if (name.Trim(' ') != "") continue;
+                if (name?.Trim(' ') != "") continue;
                 Console.WriteLine("Неверные данные.");
-                Logs.LogException(new ArgumentNullException("Nullable input."));
+                Logs.LogException(new ArgumentNullException("Empty input."));
             }
             
             var usr = new User(name);
@@ -55,7 +53,7 @@ namespace CourseWork
                         Environment.Exit(0);
                         break;
                     case 1:
-                        var card = CreateNewCard();
+                        var card = CreateNewCard(usr);
                         usr.AddCard(card);
                         break;
                     case 2:
@@ -161,13 +159,18 @@ namespace CourseWork
             }
         }
 
-        private static BankAccount CreateNewCard()
+        private static BankAccount CreateNewCard(User usr)
         {
             var id = string.Empty;
             while (id == "")
             {
                 Console.Write("Enter your card ID: ");
                 id = Console.ReadLine();
+                foreach (var c in usr.Cards.Where(c => c._id == id))
+                {
+                    id = "";
+                    PrintError("Не удалось создать карту.");
+                }
             }
             return new BankAccount(0, id);
         }

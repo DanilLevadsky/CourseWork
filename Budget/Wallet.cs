@@ -4,13 +4,9 @@
     {
         protected decimal _money = 0;
 
-        protected Wallet(decimal moneyAtStart)
+        protected Wallet(decimal moneyAtStart = 0)
         {
             this._money += moneyAtStart;
         }
-
-        public abstract void SpendMoney(ActivityOrProduct activity);
-        public abstract void AddMoney(ActivityOrProduct activity);
-        public abstract void GetMoney(decimal sum);
     }
 }

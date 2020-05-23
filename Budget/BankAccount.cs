@@ -3,7 +3,7 @@ using LogsAndExceptions;
 
 namespace Budget
 {
-    public class BankAccount : Wallet
+    public class BankAccount : Wallet, IWallet
     {
         public string _id;
 
@@ -28,7 +28,7 @@ namespace Budget
             
         }
 
-        public override void SpendMoney(ActivityOrProduct activity)
+        public void SpendMoney(ActivityOrProduct activity)
         {
             if (this._money < activity.Price)
             {
@@ -44,7 +44,7 @@ namespace Budget
             InfoAboutDeal.LogToFile(this._id, activity.Name, activity.Price, this);
         }
 
-        public override void GetMoney(decimal sum)
+        public void GetMoney(decimal sum)
         {
             if (sum > this.Balance)
             {
@@ -62,7 +62,7 @@ namespace Budget
             InfoAboutDeal.LogToFile(this._id, "You withdrew ", sum, this);
         }
 
-        public override void AddMoney(ActivityOrProduct activity)
+        public void AddMoney(ActivityOrProduct activity)
         {
             if (activity.Price < 0)
             {

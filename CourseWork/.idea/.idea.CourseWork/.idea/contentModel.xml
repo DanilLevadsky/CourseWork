@@ -9,6 +9,7 @@
       <e p="bin" t="ExcludeRecursive" />
       <e p="Budget.csproj" t="IncludeRecursive" />
       <e p="InfoAboutDeal.cs" t="Include" />
+      <e p="IWallet.cs" t="Include" />
       <e p="obj" t="ExcludeRecursive">
         <e p="Debug" t="Include">
           <e p="netcoreapp3.1" t="Include">
@@ -20,7 +21,9 @@
       <e p="WalletHandlerArgs.cs" t="Include" />
     </e>
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
-      <e p="BankCards" t="Include" />
+      <e p="BankCards" t="Include">
+        <e p="qwe_info.log" t="Include" />
+      </e>
       <e p="bin" t="ExcludeRecursive" />
       <e p="CourseWork.csproj" t="IncludeRecursive" />
       <e p="CourseWork.sln" t="IncludeFlat" />
