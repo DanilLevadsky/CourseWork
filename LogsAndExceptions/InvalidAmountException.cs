@@ -4,6 +4,8 @@ namespace LogsAndExceptions
 {
     public class InvalidAmountException : ArgumentException
     {
-        public InvalidAmountException(string message) : base(message){}
+        public InvalidAmountException(string message) : base(message)
+        {
+        }
     }
 }

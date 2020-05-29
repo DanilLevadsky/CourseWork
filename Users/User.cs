@@ -9,15 +9,33 @@ namespace Users
     public class User
     {
         private readonly string _name;
-
+        private int Count => Cards.Count;
         public List<BankAccount> Cards = new List<BankAccount>();
 
+        private delegate void WrongData(object sender, InputHandler handler);
+
+        private event WrongData IncorrectUserOperations;
+        
         public User(string name)
         {
             _name = name;
+            IncorrectUserOperations = UserHandler;
         }
 
-        public int Count => Cards.Count;
+        public string GetListOfCards()
+        {
+            var s = $"Список карт пользователя {_name}\n";
+            var i = 1;
+            foreach (var card in Cards)
+            {
+                s += $"{i} - {card._id}";
+                i++;
+            }
+
+            return s;
+        }
+
+        
 
         public BankAccount this[int index]
         {
@@ -38,18 +56,22 @@ namespace Users
 
         public void AddCard(BankAccount card)
         {
+            if (Cards.Any(x => x._id == card._id))
+            {
+                IncorrectUserOperations?.Invoke(this, new InputHandler("Карта уже существует"));
+                return;
+            }
             Cards.Add(card);
         }
 
         public BankAccount[] ChooseTwoCards()
         {
+            Console.WriteLine(GetListOfCards());
             var cards = new BankAccount[2];
             if (Count <= 1)
             {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.Error.WriteLine("Недостаточно карт в кошельке.");
-                Console.ResetColor();
-                throw new Exception("Имеется недостаточно карт.");
+                IncorrectUserOperations?.Invoke(this, new InputHandler("Недостаточно карт"));
+                throw new InvalidAmountException("Имеется недостаточно карт.");
             }
 
             string fst, scd;
@@ -71,6 +93,7 @@ namespace Users
 
             while (flag2)
             {
+                Console.WriteLine(GetListOfCards());
                 Console.WriteLine("Введите ID второй карты: ");
                 scd = Console.ReadLine();
                 foreach (var card in Cards.Where(card => card._id == scd))
@@ -91,10 +114,8 @@ namespace Users
             if (Count < 1)
             {
                 Logs.LogException(new Exception("У вас нет карт."));
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.Error.WriteLine("Недостаточно карт.");
-                Console.ResetColor();
-                throw new Exception("Not enough cards.");
+                IncorrectUserOperations?.Invoke(this, new InputHandler("Недостаточно карт."));
+                throw new InvalidAmountException("Not enough cards.");
             }
 
             BankAccount card = null;
@@ -111,11 +132,19 @@ namespace Users
                 }
 
                 if (flag != true) continue;
-                Console.WriteLine("Карта не найдена. Попробуйте еще раз.");
+                IncorrectUserOperations?.Invoke(this, new InputHandler("Карта не найдена"));
                 return null;
             }
 
             return card;
         }
+
+        private static void UserHandler(object sender, InputHandler handler)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.Error.WriteLine(handler.Message);
+            Console.ResetColor();
+        }
     }
+    
 }

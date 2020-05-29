@@ -5,8 +5,6 @@ namespace Budget
 {
     public class ActivityOrProduct
     {
-        private delegate void NegativePrice(object sender, string message);
-
         public ActivityOrProduct(string name, decimal price)
         {
             PriceBelowZero = SendMessage;
@@ -33,5 +31,7 @@ namespace Budget
             Console.Error.WriteLine(message);
             Console.ResetColor();
         }
+
+        private delegate void NegativePrice(object sender, string message);
     }
 }

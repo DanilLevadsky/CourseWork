@@ -25,6 +25,7 @@
       <e p="bin" t="ExcludeRecursive" />
       <e p="CourseWork.csproj" t="IncludeRecursive" />
       <e p="CourseWork.sln" t="IncludeFlat" />
+      <e p="exceptions.log" t="Include" />
       <e p="obj" t="ExcludeRecursive">
         <e p="Debug" t="Include">
           <e p="netcoreapp3.1" t="Include">
@@ -50,6 +51,7 @@
     </e>
     <e p="$PROJECT_DIR$/../Users" t="IncludeRecursive">
       <e p="bin" t="ExcludeRecursive" />
+      <e p="InputHandler.cs" t="Include" />
       <e p="obj" t="ExcludeRecursive">
         <e p="Debug" t="Include">
           <e p="netcoreapp3.1" t="Include">

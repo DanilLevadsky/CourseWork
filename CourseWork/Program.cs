@@ -15,7 +15,9 @@ namespace CourseWork
                                     "3 - Перевести с карты на карту\n" +
                                     "4 - Потратить деньги\n" +
                                     "5 - Вывести деньги\n" +
-                                    "6 - Получить деньги";
+                                    "6 - Получить деньги\n"+
+                                    "7 - Информация о картах";
+        
 
         private static void Main(string[] args)
         {
@@ -140,21 +142,29 @@ namespace CourseWork
                         {
                             Console.WriteLine($"На какую карту будут зачислены деньги, {name}?");
                             card = usr.ChooseCard();
-                            Console.WriteLine("Укажите источник денег.");
-                            obj = CreateNewThing();
-                            if (obj == null)
+                            if (usr.Cards.Any(x => x._id == card._id))
                             {
-                                PrintError("Не удалось создать объект. Неверные данные.");
+                                Console.WriteLine("Укажите источник денег.");
+                                obj = CreateNewThing();
+
+
+                                if (obj == null)
+                                {
+                                    break;
+                                }
+                                card.AddMoney(obj);
                                 break;
                             }
-
-                            card.AddMoney(obj);
+                            PrintError("Card not found.");
+                            break;
                         }
                         catch (Exception e)
                         {
                             Logs.LogException(e);
                         }
-
+                        break;
+                    case 7:
+                        Console.WriteLine(usr.GetListOfCards());
                         break;
                 }
             }
@@ -177,32 +187,36 @@ namespace CourseWork
             return new BankAccount(0, id);
         }
 
-        private static ActivityOrProduct CreateNewThing()
+        private static ActivityOrProduct? CreateNewThing()
         {
             string nameOfActivity;
             decimal price;
-            try
-            {
+            // try
+            // {
                 Console.Write("Введите название предмета/активности: ");
                 nameOfActivity = Console.ReadLine();
+                if (nameOfActivity?.Trim(' ') == string.Empty)
+                {
+                    PrintError("Не удалось идентифицировать предмет/услугу");
+                    return null;
+                }
                 Console.Write("Введите цену услуги: ");
                 price = Convert.ToDecimal(Console.ReadLine());
-                if (price >= 0) return new ActivityOrProduct(nameOfActivity, price);
-                Logs.LogException(new InvalidAmountException("Negative price detected."));
-                return null;
-            }
-            catch (Exception e)
-            {
-                Logs.LogException(e);
-                PrintError("Не удалось идентифицировать предмет/услугу.");
-                return null;
-            }
+                if (price < 0) Logs.LogException(new InvalidAmountException("Negative price detected."));
+                return new ActivityOrProduct(nameOfActivity, price);
+            // }
+            // catch (Exception e)
+            // {
+            //     Logs.LogException(e);
+            //     PrintError("Не удалось идентифицировать предмет/услугу.");
+            //     return null;
+            // }
         }
 
         private static void PrintError(string message)
         {
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine(message);
+            Console.Error.WriteLine(message);
             Console.ResetColor();
         }
     }

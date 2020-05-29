@@ -54,7 +54,6 @@ namespace Budget
 
             if (sum < 0)
             {
-                
                 Logs.LogException(new InvalidAmountException("You can`t get a negative amount of money."));
                 return;
             }
@@ -87,7 +86,8 @@ namespace Budget
             fst = new BankAccount(fst.Balance + scd.Balance, fst._id);
             var temp = scd.Balance;
             scd.Balance = 0;
-            fst.SuccessfulOperation(fst, new WalletHandlerArgs($"All money from \'{scd._id}\' were transferred to \'{fst._id}\'"));
+            fst.SuccessfulOperation(fst,
+                new WalletHandlerArgs($"All money from \'{scd._id}\' were transferred to \'{fst._id}\'"));
             InfoAboutDeal.LogToFile(fst._id, $"Received from \'{scd._id}\' card", temp, fst);
             InfoAboutDeal.LogToFile(scd._id, $"Transferred to \'{fst._id}\' card", temp, scd);
             return fst;
@@ -101,6 +101,7 @@ namespace Budget
                 from.InvalidCardOperation?.Invoke(from, new WalletHandlerArgs("Not enough money."));
                 return;
             }
+
             if (sum > from.Balance)
             {
                 InfoAboutDeal.LogToFile(from._id, $"You tried to transfer to {to._id} card ", sum, from);
@@ -110,7 +111,8 @@ namespace Budget
 
             to.Balance += sum;
             from.Balance -= sum;
-            from.SuccessfulOperation(from, new WalletHandlerArgs($"From \'{from._id}\' about ${sum} was transferred to \'{to._id}\'."));
+            from.SuccessfulOperation(from,
+                new WalletHandlerArgs($"From \'{from._id}\' about ${sum} was transferred to \'{to._id}\'."));
             InfoAboutDeal.LogToFile(to._id, $"Received from {from._id}", sum, to);
             InfoAboutDeal.LogToFile(from._id, $"Transferred to {from._id} about", sum, from);
         }
@@ -128,7 +130,7 @@ namespace Budget
             Console.Error.WriteLine(handler.Message);
             Console.ResetColor();
         }
-        
+
         private delegate void CardsOperation(object sender, WalletHandlerArgs handler);
     }
 }
