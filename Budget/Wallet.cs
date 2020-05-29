@@ -2,11 +2,11 @@
 {
     public abstract class Wallet
     {
-        protected decimal _money = 0;
+        protected decimal _money;
 
         protected Wallet(decimal moneyAtStart = 0)
         {
-            this._money += moneyAtStart;
+            _money += moneyAtStart;
         }
     }
 }

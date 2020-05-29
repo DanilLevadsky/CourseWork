@@ -16,10 +16,9 @@ namespace CourseWork
                                     "4 - Потратить деньги\n" +
                                     "5 - Вывести деньги\n" +
                                     "6 - Получить деньги";
-        
+
         private static void Main(string[] args)
         {
-            
             var name = string.Empty;
             while (name?.Trim(' ') == "")
             {
@@ -29,13 +28,13 @@ namespace CourseWork
                 Console.WriteLine("Неверные данные.");
                 Logs.LogException(new ArgumentNullException("Empty input."));
             }
-            
+
             var usr = new User(name);
 
             while (true)
             {
                 Console.WriteLine(menu);
-                int key; 
+                int key;
                 try
                 {
                     key = int.Parse(Console.ReadLine());
@@ -45,6 +44,7 @@ namespace CourseWork
                     Logs.LogException(e);
                     continue;
                 }
+
                 ActivityOrProduct obj;
                 switch (key)
                 {
@@ -81,6 +81,7 @@ namespace CourseWork
                         {
                             Logs.LogException(e);
                         }
+
                         break;
                     case 4:
                         try
@@ -93,6 +94,7 @@ namespace CourseWork
                                 PrintError("Не удалось создать объект. Неверные данные.");
                                 break;
                             }
+
                             c.SpendMoney(obj);
                         }
                         catch (Exception e)
@@ -107,10 +109,7 @@ namespace CourseWork
                         try
                         {
                             m = Convert.ToDecimal(Console.ReadLine());
-                            if (m.GetType() != typeof(decimal))
-                            {
-                                break;
-                            }
+                            if (m.GetType() != typeof(decimal)) break;
 
                             if (m < 0)
                             {
@@ -124,6 +123,7 @@ namespace CourseWork
                             Logs.LogException(e);
                             break;
                         }
+
                         var crd = usr.ChooseCard();
                         try
                         {
@@ -133,6 +133,7 @@ namespace CourseWork
                         {
                             Logs.LogException(e);
                         }
+
                         break;
                     case 6:
                         try
@@ -146,16 +147,16 @@ namespace CourseWork
                                 PrintError("Не удалось создать объект. Неверные данные.");
                                 break;
                             }
+
                             card.AddMoney(obj);
                         }
                         catch (Exception e)
                         {
                             Logs.LogException(e);
                         }
+
                         break;
-                    default:
-                        break;
-                }    
+                }
             }
         }
 
@@ -172,6 +173,7 @@ namespace CourseWork
                     PrintError("Не удалось создать карту.");
                 }
             }
+
             return new BankAccount(0, id);
         }
 
@@ -186,7 +188,7 @@ namespace CourseWork
                 Console.Write("Введите цену услуги: ");
                 price = Convert.ToDecimal(Console.ReadLine());
                 if (price >= 0) return new ActivityOrProduct(nameOfActivity, price);
-                Logs.LogException(new ArgumentException("Negative price detected."));
+                Logs.LogException(new InvalidAmountException("Negative price detected."));
                 return null;
             }
             catch (Exception e)
@@ -202,6 +204,6 @@ namespace CourseWork
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(message);
             Console.ResetColor();
-        } 
+        }
     }
 }

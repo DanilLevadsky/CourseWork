@@ -1,14 +1,12 @@
 namespace Budget
 {
-    public class WalletHandlerArgs
+    internal class WalletHandlerArgs
     {
-        private string _message;
-
-        public string Message => _message;
-
-        public WalletHandlerArgs(string message)
+        internal WalletHandlerArgs(string message)
         {
-            _message = message;
+            Message = message;
         }
+
+        internal string Message { get; }
     }
 }

@@ -1,5 +1,5 @@
-using System.IO;
 using System;
+using System.IO;
 
 namespace Budget
 {
@@ -7,15 +7,15 @@ namespace Budget
     {
         public static void LogToFile(string bankId, string name, decimal value, BankAccount card)
         {
-            var fileName = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName,$"BankCards/{card._id}_info.log");
-            
+            var fileName = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName,
+                $"BankCards/{card._id}_info.log");
+
             void WriteToFile(TextWriter sw)
             {
-                
                 sw.Write($"{DateTime.Now}\t{name} ${value}\n");
                 sw.Write($"Current balance: {card.Balance}\n\n");
-                
             }
+
             if (!File.Exists(fileName))
             {
                 using var sw = new StreamWriter(fileName);

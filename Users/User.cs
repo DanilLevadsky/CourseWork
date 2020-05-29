@@ -9,20 +9,15 @@ namespace Users
     public class User
     {
         private readonly string _name;
-        
-        public List<Budget.BankAccount> Cards = new List<BankAccount>();
 
-        public int Count => Cards.Count;
-        
+        public List<BankAccount> Cards = new List<BankAccount>();
+
         public User(string name)
         {
-            this._name = name;
+            _name = name;
         }
 
-        public void AddCard(Budget.BankAccount card)
-        {
-            this.Cards.Add(card);
-        }
+        public int Count => Cards.Count;
 
         public BankAccount this[int index]
         {
@@ -30,7 +25,7 @@ namespace Users
             {
                 try
                 {
-                    return this.Cards[index];
+                    return Cards[index];
                 }
                 catch (Exception e)
                 {
@@ -41,10 +36,15 @@ namespace Users
             }
         }
 
+        public void AddCard(BankAccount card)
+        {
+            Cards.Add(card);
+        }
+
         public BankAccount[] ChooseTwoCards()
         {
             var cards = new BankAccount[2];
-            if (this.Count <= 1)
+            if (Count <= 1)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.Error.WriteLine("Недостаточно карт в кошельке.");
@@ -59,53 +59,51 @@ namespace Users
             {
                 Console.WriteLine("Введите ID первой карты: ");
                 fst = Console.ReadLine();
-                foreach (var card in this.Cards.Where(card => card._id == fst))
+                foreach (var card in Cards.Where(card => card._id == fst))
                 {
                     cards[0] = card;
                     flag1 = false;
                     break;
                 }
 
-                if (flag1 == true)
-                {
-                    Console.WriteLine("Карта не найдена. Попробуйте еще раз.");
-                } 
+                if (flag1) Console.WriteLine("Карта не найдена. Попробуйте еще раз.");
             }
+
             while (flag2)
             {
                 Console.WriteLine("Введите ID второй карты: ");
                 scd = Console.ReadLine();
-                foreach (var card in this.Cards.Where(card => card._id == scd))
+                foreach (var card in Cards.Where(card => card._id == scd))
                 {
                     cards[1] = card;
                     flag2 = false;
                     break;
                 }
 
-                if (flag2 == true)
-                {
-                    Console.WriteLine("Карта не найдена. Попробуйте еще раз.");
-                } 
+                if (flag2) Console.WriteLine("Карта не найдена. Попробуйте еще раз.");
             }
+
             return cards;
         }
+
         public BankAccount ChooseCard()
         {
-            if (this.Count < 1)
+            if (Count < 1)
             {
                 Logs.LogException(new Exception("У вас нет карт."));
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.Error.WriteLine("Недостаточно карт.");
                 Console.ResetColor();
-                throw new Exception("Not enough cards."); 
+                throw new Exception("Not enough cards.");
             }
+
             BankAccount card = null;
             var flag = true;
             while (flag)
             {
                 Console.WriteLine("Введите ID карты: ");
                 var temp = Console.ReadLine();
-                foreach (var c in this.Cards.Where(card => card._id == temp))
+                foreach (var c in Cards.Where(card => card._id == temp))
                 {
                     card = c;
                     flag = false;

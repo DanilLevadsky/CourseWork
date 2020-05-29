@@ -1,9 +1,9 @@
 namespace Budget
 {
-    public interface IWallet
+    internal interface IWallet
     {
-        public void SpendMoney(ActivityOrProduct activity);
-        public void AddMoney(ActivityOrProduct activity);
-        public void GetMoney(decimal sum);
+        internal void SpendMoney(ActivityOrProduct activity);
+        internal void AddMoney(ActivityOrProduct activity);
+        internal void GetMoney(decimal sum);
     }
 }
