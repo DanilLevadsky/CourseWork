@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e1cfdc6a-3737-4f57-94ea-78871932bd70" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LogsAndExceptions/InvalidAmountException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../LogsAndExceptions/InvalidAmountException.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Users/InputHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/InputHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Users/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/User.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +47,6 @@
         <option value="$PROJECT_DIR$/../Users/CustomList.cs" />
         <option value="$PROJECT_DIR$/../Users/Users.csproj" />
         <option value="$PROJECT_DIR$/../Budget/Budget.csproj" />
-        <option value="$PROJECT_DIR$/../LogsAndExceptions/Logs.cs" />
         <option value="$PROJECT_DIR$/../Budget/InfoAboutDeal.cs" />
         <option value="$PROJECT_DIR$/../Budget/CardsHandler.cs" />
         <option value="$PROJECT_DIR$/../Budget/Wallet.cs" />
@@ -59,9 +56,10 @@
         <option value="$PROJECT_DIR$/../Budget/BankAccount.cs" />
         <option value="$PROJECT_DIR$/../Budget/IWallet.cs" />
         <option value="$PROJECT_DIR$/../Users/InputHandler.cs" />
-        <option value="$PROJECT_DIR$/Program.cs" />
         <option value="$PROJECT_DIR$/../LogsAndExceptions/InvalidAmountException.cs" />
+        <option value="$PROJECT_DIR$/../LogsAndExceptions/Logs.cs" />
         <option value="$PROJECT_DIR$/../Users/User.cs" />
+        <option value="$PROJECT_DIR$/Program.cs" />
       </list>
     </option>
   </component>
@@ -126,7 +124,7 @@
       <workItem from="1589907655671" duration="5322000" />
       <workItem from="1590230765715" duration="2710000" />
       <workItem from="1590781871469" duration="9833000" />
-      <workItem from="1590836466768" duration="2115000" />
+      <workItem from="1590836466768" duration="2843000" />
     </task>
     <servers />
   </component>

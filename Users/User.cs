@@ -73,7 +73,6 @@ namespace Users
                 throw new InvalidAmountException("Имеется недостаточно карт.");
             }
 
-            Console.WriteLine(GetListOfCards());
             string fst, scd;
             var flag1 = true;
             var flag2 = true;
@@ -94,7 +93,6 @@ namespace Users
 
             while (flag2)
             {
-                Console.WriteLine(GetListOfCards());
                 Console.WriteLine("Введите ID второй карты: ");
                 scd = Console.ReadLine();
                 foreach (var card in Cards.Where(card => card._id == scd))
@@ -120,7 +118,6 @@ namespace Users
                 throw new InvalidAmountException("Not enough cards.");
             }
 
-            Console.WriteLine(GetListOfCards());
             BankAccount card = null;
             var flag = true;
             while (flag)

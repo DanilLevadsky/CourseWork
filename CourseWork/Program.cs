@@ -62,9 +62,9 @@ namespace CourseWork
                         break;
 
                     case 2:
+                        WriteInfo(usr.GetListOfCards());
                         try
                         {
-                            WriteInfo(usr.GetListOfCards());
                             WriteInfo("Выберите карты: ");
                             var cards = usr.ChooseTwoCards();
                             cards[0] = cards[0] + cards[1];
@@ -76,9 +76,9 @@ namespace CourseWork
                             break;
                         }
                     case 3:
+                        WriteInfo(usr.GetListOfCards());
                         try
                         {
-                            WriteInfo(usr.GetListOfCards());
                             var temp = usr.ChooseTwoCards();
                             WriteInfo("Сколько денег хотите передать: ");
                             var money = Convert.ToDecimal(Console.ReadLine());
@@ -91,9 +91,9 @@ namespace CourseWork
 
                         break;
                     case 4:
+                        WriteInfo(usr.GetListOfCards());
                         try
                         {
-                            WriteInfo(usr.GetListOfCards());
                             WriteInfo("Выберите карту: ");
                             var c = usr.ChooseCard();
                             obj = CreateNewThing();
@@ -117,7 +117,11 @@ namespace CourseWork
                         try
                         {
                             m = Convert.ToDecimal(Console.ReadLine());
-                            if (m.GetType() != typeof(decimal)) break;
+                            if (m.GetType() != typeof(decimal))
+                            {
+                                Logs.LogException(new ArgumentException("Сумма должна быть числом"));
+                                break;
+                            }
 
                             if (m < 0)
                             {
@@ -131,7 +135,8 @@ namespace CourseWork
                             Logs.LogException(e);
                             break;
                         }
-
+                        WriteInfo(usr.GetListOfCards());
+                        WriteInfo("Выберите карту");
                         var crd = usr.ChooseCard();
                         try
                         {
