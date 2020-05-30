@@ -39,6 +39,7 @@ namespace CourseWork
                 int key;
                 try
                 {
+                    Console.Write("Ваш выбор: ");
                     key = int.Parse(Console.ReadLine());
                 }
                 catch (Exception e)
@@ -48,20 +49,26 @@ namespace CourseWork
                 }
 
                 ActivityOrProduct obj;
+                BankAccount card;
                 switch (key)
                 {
                     case 0:
-                        Console.WriteLine($"Программа завершена. Хорошего вечера, {name}");
+                        WriteInfo($"Программа завершена. До свидания, {name}");
                         Environment.Exit(0);
                         break;
                     case 1:
-                        var card = CreateNewCard(usr);
-                        usr.AddCard(card);
+                        card = CreateNewCard(usr);
+                        if (card != null)
+                        {
+                            usr.AddCard(card);
+                        }
                         break;
-                    case 2:
+
+                case 2:
                         try
                         {
-                            Console.WriteLine("Выберите карты: ");
+                            WriteInfo(usr.GetListOfCards());
+                            WriteInfo("Выберите карты: ");
                             var cards = usr.ChooseTwoCards();
                             cards[0] = cards[0] + cards[1];
                             break;
@@ -74,8 +81,9 @@ namespace CourseWork
                     case 3:
                         try
                         {
+                            WriteInfo(usr.GetListOfCards());
                             var temp = usr.ChooseTwoCards();
-                            Console.Write("Сколько денег хотите передать: ");
+                            WriteInfo("Сколько денег хотите передать: ");
                             var money = Convert.ToDecimal(Console.ReadLine());
                             BankAccount.Transfer(temp[0], temp[1], money);
                         }
@@ -88,7 +96,8 @@ namespace CourseWork
                     case 4:
                         try
                         {
-                            Console.WriteLine("Выберите карту: ");
+                            WriteInfo(usr.GetListOfCards());
+                            WriteInfo("Выберите карту: ");
                             var c = usr.ChooseCard();
                             obj = CreateNewThing();
                             if (obj == null)
@@ -107,7 +116,7 @@ namespace CourseWork
                         break;
                     case 5:
                         decimal m = 0;
-                        Console.WriteLine($"{name} сколько денег Вы хотите вывести?");
+                        WriteInfo($"{name} сколько денег Вы хотите вывести?");
                         try
                         {
                             m = Convert.ToDecimal(Console.ReadLine());
@@ -116,7 +125,7 @@ namespace CourseWork
                             if (m < 0)
                             {
                                 PrintError($"{name}, нельзя вывести отрицательную сумму.");
-                                Logs.LogException(new ArgumentException("You can`t withdraw negative sum."));
+                                Logs.LogException(new InvalidAmountException("You can`t withdraw negative sum."));
                                 break;
                             }
                         }
@@ -140,7 +149,7 @@ namespace CourseWork
                     case 6:
                         try
                         {
-                            Console.WriteLine($"На какую карту будут зачислены деньги, {name}?");
+                            WriteInfo($"На какую карту будут зачислены деньги, {name}?");
                             card = usr.ChooseCard();
                             if (usr.Cards.Any(x => x._id == card._id))
                             {
@@ -155,7 +164,7 @@ namespace CourseWork
                                 card.AddMoney(obj);
                                 break;
                             }
-                            PrintError("Card not found.");
+                            PrintError("Карта не найдена");
                             break;
                         }
                         catch (Exception e)
@@ -164,58 +173,50 @@ namespace CourseWork
                         }
                         break;
                     case 7:
-                        Console.WriteLine(usr.GetListOfCards());
+                        WriteInfo(usr.GetListOfCards());
                         break;
                 }
             }
         }
 
-        private static BankAccount CreateNewCard(User usr)
+        private static BankAccount? CreateNewCard(User usr)
         {
-            var id = string.Empty;
-            while (id == "")
-            {
-                Console.Write("Enter your card ID: ");
-                id = Console.ReadLine();
-                foreach (var c in usr.Cards.Where(c => c._id == id))
-                {
-                    id = "";
-                    PrintError("Не удалось создать карту.");
-                }
-            }
+            WriteInfo(usr.GetListOfCards());
+            Console.Write("Введите ID карты: ");
+            var id = Console.ReadLine();
+            if (id?.Trim(' ') != string.Empty) return new BankAccount(0, id);
+            PrintError("Не удалось создать карту.");
+            return null;
 
-            return new BankAccount(0, id);
         }
 
         private static ActivityOrProduct? CreateNewThing()
         {
             string nameOfActivity;
             decimal price;
-            // try
-            // {
-                Console.Write("Введите название предмета/активности: ");
-                nameOfActivity = Console.ReadLine();
-                if (nameOfActivity?.Trim(' ') == string.Empty)
-                {
-                    PrintError("Не удалось идентифицировать предмет/услугу");
-                    return null;
-                }
-                Console.Write("Введите цену услуги: ");
-                price = Convert.ToDecimal(Console.ReadLine());
-                if (price < 0) Logs.LogException(new InvalidAmountException("Negative price detected."));
-                return new ActivityOrProduct(nameOfActivity, price);
-            // }
-            // catch (Exception e)
-            // {
-            //     Logs.LogException(e);
-            //     PrintError("Не удалось идентифицировать предмет/услугу.");
-            //     return null;
-            // }
+            Console.Write("Введите название предмета/активности: ");
+            nameOfActivity = Console.ReadLine(); 
+            if (nameOfActivity?.Trim(' ') == string.Empty)
+            { 
+                PrintError("Не удалось идентифицировать предмет/услугу"); 
+                return null;
+            } 
+            Console.Write("Введите цену услуги: "); 
+            price = Convert.ToDecimal(Console.ReadLine()); 
+            if (price < 0) Logs.LogException(new InvalidAmountException("Negative price detected.")); 
+            return new ActivityOrProduct(nameOfActivity, price);
         }
 
         private static void PrintError(string message)
         {
             Console.ForegroundColor = ConsoleColor.Red;
+            Console.Error.WriteLine(message);
+            Console.ResetColor();
+        }
+
+        private static void WriteInfo(string message)
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.Error.WriteLine(message);
             Console.ResetColor();
         }

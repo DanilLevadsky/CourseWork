@@ -24,11 +24,15 @@ namespace Users
 
         public string GetListOfCards()
         {
+            if (Count == 0)
+            {
+                return "У вас пока нет карт.";
+            }
             var s = $"Список карт пользователя {_name}\n";
             var i = 1;
             foreach (var card in Cards)
             {
-                s += $"{i} - {card._id}";
+                s += $"{i} - {card._id}\n";
                 i++;
             }
 
@@ -58,7 +62,7 @@ namespace Users
         {
             if (Cards.Any(x => x._id == card._id))
             {
-                IncorrectUserOperations?.Invoke(this, new InputHandler("Карта уже существует"));
+                IncorrectUserOperations?.Invoke(this, new InputHandler("Карта уже существует."));
                 return;
             }
             Cards.Add(card);
@@ -66,14 +70,13 @@ namespace Users
 
         public BankAccount[] ChooseTwoCards()
         {
-            Console.WriteLine(GetListOfCards());
             var cards = new BankAccount[2];
             if (Count <= 1)
             {
                 IncorrectUserOperations?.Invoke(this, new InputHandler("Недостаточно карт"));
                 throw new InvalidAmountException("Имеется недостаточно карт.");
             }
-
+            Console.WriteLine(GetListOfCards());
             string fst, scd;
             var flag1 = true;
             var flag2 = true;
@@ -88,7 +91,8 @@ namespace Users
                     break;
                 }
 
-                if (flag1) Console.WriteLine("Карта не найдена. Попробуйте еще раз.");
+                if (flag1) 
+                    IncorrectUserOperations?.Invoke(this, new InputHandler("Карта не найдена. Попробуйте еще раз."));
             }
 
             while (flag2)
@@ -103,7 +107,8 @@ namespace Users
                     break;
                 }
 
-                if (flag2) Console.WriteLine("Карта не найдена. Попробуйте еще раз.");
+                if (flag2)
+                    IncorrectUserOperations?.Invoke(this, new InputHandler("Карта не найдена. Попробуйте еще раз."));
             }
 
             return cards;
@@ -111,13 +116,14 @@ namespace Users
 
         public BankAccount ChooseCard()
         {
+            
             if (Count < 1)
             {
                 Logs.LogException(new Exception("У вас нет карт."));
                 IncorrectUserOperations?.Invoke(this, new InputHandler("Недостаточно карт."));
                 throw new InvalidAmountException("Not enough cards.");
             }
-
+            Console.WriteLine(GetListOfCards());
             BankAccount card = null;
             var flag = true;
             while (flag)
