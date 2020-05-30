@@ -18,7 +18,7 @@ namespace Users
         }
 
         public int Count => Cards.Count;
-        
+
 
         private event WrongData IncorrectUserOperations;
 
@@ -89,19 +89,13 @@ namespace Users
                     IncorrectUserOperations?.Invoke(this, new InputHandler("Карта не найдена. Попробуйте еще раз."));
             }
 
-            if (cards[0]._id == cards[1]._id)
-            {
-                throw new InvalidObjectException("Выбраны одинаковые карты");
-            }
+            if (cards[0]._id == cards[1]._id) throw new InvalidObjectException("Выбраны одинаковые карты");
             return cards;
         }
 
         public BankAccount ChooseCard()
         {
-            if (Count < 1)
-            {
-                throw new InvalidObjectException("Недостаточно карт.");
-            }
+            if (Count < 1) throw new InvalidObjectException("Недостаточно карт.");
 
             BankAccount card = null;
             var flag = true;

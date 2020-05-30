@@ -34,7 +34,6 @@ namespace CourseWork
 
 
             while (true)
-            {
                 try
                 {
                     Console.WriteLine(menu);
@@ -68,6 +67,7 @@ namespace CourseWork
                                     PrintError("Такая карта уже существуем.");
                                     break;
                                 }
+
                                 usr.AddCard(card);
                                 WriteInfo("Карта успешно создана.");
                             }
@@ -100,15 +100,9 @@ namespace CourseWork
                             decimal m = 0;
                             WriteInfo($"{name} сколько денег Вы хотите вывести?");
                             m = Convert.ToDecimal(Console.ReadLine());
-                            if (m.GetType() != typeof(decimal))
-                            {
-                                throw new ArgumentException("Сумма должна быть числом");
-                            }
+                            if (m.GetType() != typeof(decimal)) throw new ArgumentException("Сумма должна быть числом");
 
-                            if (m < 0)
-                            {
-                                throw new InvalidObjectException("Нельзя вывести отрицательную сумму.");
-                            }
+                            if (m < 0) throw new InvalidObjectException("Нельзя вывести отрицательную сумму.");
 
                             WriteInfo(usr.GetListOfCards());
                             WriteInfo("Выберите карту");
@@ -141,7 +135,6 @@ namespace CourseWork
                             WriteInfo(usr.GetListOfCards());
                             break;
                     }
-
                 }
                 catch (InvalidCardOperationException e)
                 {
@@ -164,10 +157,6 @@ namespace CourseWork
                 {
                     Logs.LogException(e);
                 }
-            }
-
-
-
         }
 
         private static BankAccount CreateNewCard(User usr)
@@ -175,13 +164,8 @@ namespace CourseWork
             WriteInfo(usr.GetListOfCards());
             Console.Write("Введите ID карты: ");
             var id = Console.ReadLine();
-            if (id?.Trim(' ') != string.Empty)
-            {
-                return new BankAccount(0, id);
-            }
-            throw new InvalidObjectException("Не удалось создать карту");              
-            
-
+            if (id?.Trim(' ') != string.Empty) return new BankAccount(0, id);
+            throw new InvalidObjectException("Не удалось создать карту");
         }
 
         private static ActivityOrProduct CreateNewThing()
@@ -192,9 +176,7 @@ namespace CourseWork
             Console.Write("Введите название предмета/активности: ");
             nameOfActivity = Console.ReadLine();
             if (nameOfActivity?.Trim(' ') == string.Empty)
-            {
                 throw new InvalidObjectException("Не удалось идентифицировать предмет/услугу");
-            }
             Console.Write("Введите цену услуги: ");
             strPrice = Console.ReadLine();
             if (strPrice?.Trim(' ') == string.Empty) throw new InvalidObjectException("Цена должна быть числом");

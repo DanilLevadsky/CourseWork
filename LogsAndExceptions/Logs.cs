@@ -5,7 +5,7 @@ namespace LogsAndExceptions
 {
     public static class Logs
     {
-        public static  void LogException(params Exception[] e)
+        public static void LogException(params Exception[] e)
         {
             var fileName = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent?.Parent?.FullName,
                 "exceptions.log");

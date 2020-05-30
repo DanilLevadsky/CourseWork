@@ -16,6 +16,7 @@ namespace Budget
                 InvalidCardOperation?.Invoke(this, new WalletHandlerArgs("Балланс не может быть отрицательным"));
                 return;
             }
+
             _money = moneyAtStart;
             _id = ID;
         }
@@ -49,10 +50,7 @@ namespace Budget
                 throw new InvalidCardOperationException("Недостаточно денег на счету");
             }
 
-            if (sum < 0)
-            {
-                throw new InvalidCardOperationException("Нельзя вывести отрицательную сумму");
-            }
+            if (sum < 0) throw new InvalidCardOperationException("Нельзя вывести отрицательную сумму");
 
             _money -= sum;
             InfoAboutDeal.LogToFile(_id, "You withdrew ", sum, this);
