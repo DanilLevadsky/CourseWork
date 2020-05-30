@@ -7,7 +7,7 @@ namespace LogsAndExceptions
     {
         public static void LogException(params Exception[] e)
         {
-            var fileName = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName,
+            var fileName = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent?.Parent?.FullName,
                 "exceptions.log");
 
             void WriteToFile(TextWriter sw)

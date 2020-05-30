@@ -15,9 +15,9 @@ namespace CourseWork
                                     "3 - Перевести с карты на карту\n" +
                                     "4 - Потратить деньги\n" +
                                     "5 - Вывести деньги\n" +
-                                    "6 - Получить деньги\n"+
+                                    "6 - Получить деньги\n" +
                                     "7 - Информация о картах";
-        
+
 
         private static void Main(string[] args)
         {
@@ -58,13 +58,10 @@ namespace CourseWork
                         break;
                     case 1:
                         card = CreateNewCard(usr);
-                        if (card != null)
-                        {
-                            usr.AddCard(card);
-                        }
+                        if (card != null) usr.AddCard(card);
                         break;
 
-                case 2:
+                    case 2:
                         try
                         {
                             WriteInfo(usr.GetListOfCards());
@@ -157,20 +154,18 @@ namespace CourseWork
                                 obj = CreateNewThing();
 
 
-                                if (obj == null)
-                                {
-                                    break;
-                                }
+                                if (obj == null) break;
                                 card.AddMoney(obj);
                                 break;
                             }
+
                             PrintError("Карта не найдена");
-                            break;
                         }
                         catch (Exception e)
                         {
                             Logs.LogException(e);
                         }
+
                         break;
                     case 7:
                         WriteInfo(usr.GetListOfCards());
@@ -187,7 +182,6 @@ namespace CourseWork
             if (id?.Trim(' ') != string.Empty) return new BankAccount(0, id);
             PrintError("Не удалось создать карту.");
             return null;
-
         }
 
         private static ActivityOrProduct? CreateNewThing()
@@ -195,15 +189,16 @@ namespace CourseWork
             string nameOfActivity;
             decimal price;
             Console.Write("Введите название предмета/активности: ");
-            nameOfActivity = Console.ReadLine(); 
+            nameOfActivity = Console.ReadLine();
             if (nameOfActivity?.Trim(' ') == string.Empty)
-            { 
-                PrintError("Не удалось идентифицировать предмет/услугу"); 
+            {
+                PrintError("Не удалось идентифицировать предмет/услугу");
                 return null;
-            } 
-            Console.Write("Введите цену услуги: "); 
-            price = Convert.ToDecimal(Console.ReadLine()); 
-            if (price < 0) Logs.LogException(new InvalidAmountException("Negative price detected.")); 
+            }
+
+            Console.Write("Введите цену услуги: ");
+            price = Convert.ToDecimal(Console.ReadLine());
+            if (price < 0) Logs.LogException(new InvalidAmountException("Negative price detected."));
             return new ActivityOrProduct(nameOfActivity, price);
         }
 

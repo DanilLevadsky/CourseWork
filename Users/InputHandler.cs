@@ -6,6 +6,7 @@ namespace Users
         {
             Message = message;
         }
+
         internal string Message { get; }
     }
 }
