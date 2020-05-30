@@ -7,5 +7,6 @@ namespace LogsAndExceptions
         public InvalidAmountException(string message) : base(message)
         {
         }
+
     }
 }
