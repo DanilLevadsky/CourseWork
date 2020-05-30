@@ -5,14 +5,14 @@ namespace LogsAndExceptions
 {
     public static class Logs
     {
-        public static void LogException(params Exception[] e)
+        public static  void LogException(params Exception[] e)
         {
             var fileName = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent?.Parent?.FullName,
                 "exceptions.log");
 
-            void WriteToFile(TextWriter sw)
+            async void WriteToFile(TextWriter sw)
             {
-                foreach (var exc in e) sw.Write($"{DateTime.Now}: {exc}\n\n");
+                foreach (var exc in e) await sw.WriteAsync($"{DateTime.Now}: {exc}\n\n");
             }
 
             if (!File.Exists(fileName))

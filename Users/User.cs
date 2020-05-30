@@ -17,25 +17,8 @@ namespace Users
             IncorrectUserOperations = UserHandler;
         }
 
-        private int Count => Cards.Count;
-
-
-        public BankAccount this[int index]
-        {
-            get
-            {
-                try
-                {
-                    return Cards[index];
-                }
-                catch (Exception e)
-                {
-                    Logs.LogException(e);
-                }
-
-                return null;
-            }
-        }
+        public int Count => Cards.Count;
+        
 
         private event WrongData IncorrectUserOperations;
 
@@ -50,7 +33,7 @@ namespace Users
                 i++;
             }
 
-            return s;
+            return s.TrimEnd('\n');
         }
 
         public void AddCard(BankAccount card)
@@ -70,7 +53,7 @@ namespace Users
             if (Count <= 1)
             {
                 IncorrectUserOperations?.Invoke(this, new InputHandler("Недостаточно карт"));
-                throw new InvalidAmountException("Имеется недостаточно карт.");
+                throw new InvalidCardOperationException("Имеется недостаточно карт.");
             }
 
             string fst, scd;
@@ -106,6 +89,10 @@ namespace Users
                     IncorrectUserOperations?.Invoke(this, new InputHandler("Карта не найдена. Попробуйте еще раз."));
             }
 
+            if (cards[0]._id == cards[1]._id)
+            {
+                throw new InvalidObjectException("Выбраны одинаковые карты");
+            }
             return cards;
         }
 
@@ -113,9 +100,7 @@ namespace Users
         {
             if (Count < 1)
             {
-                Logs.LogException(new Exception("У вас нет карт."));
-                IncorrectUserOperations?.Invoke(this, new InputHandler("Недостаточно карт."));
-                throw new InvalidAmountException("Not enough cards.");
+                throw new InvalidObjectException("Недостаточно карт.");
             }
 
             BankAccount card = null;
@@ -137,6 +122,11 @@ namespace Users
             }
 
             return card;
+        }
+
+        public bool IfExist(BankAccount card)
+        {
+            return Cards.Any(x => x._id == card._id);
         }
 
         private static void UserHandler(object sender, InputHandler handler)

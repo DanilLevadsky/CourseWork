@@ -3,7 +3,7 @@ using LogsAndExceptions;
 
 namespace Budget
 {
-    public class BankAccount : Wallet, IWallet
+    public sealed class BankAccount : Wallet, IWallet
     {
         public string _id;
 
@@ -13,10 +13,9 @@ namespace Budget
             SuccessfulOperation = Success;
             if (moneyAtStart < 0)
             {
-                InvalidCardOperation?.Invoke(this, new WalletHandlerArgs("Your balance can`t be a negative."));
+                InvalidCardOperation?.Invoke(this, new WalletHandlerArgs("Балланс не может быть отрицательным"));
                 return;
             }
-
             _money = moneyAtStart;
             _id = ID;
         }
@@ -31,12 +30,11 @@ namespace Budget
         {
             if (_money < activity.Price)
             {
-                Logs.LogException(new InvalidAmountException("Negative Balance"));
-                InfoAboutDeal.LogToFile(_id, "Not enough money. You tried to spend on " + activity.Name +
-                                             " about ", activity.Price, this);
-                InvalidCardOperation?.Invoke(this, new WalletHandlerArgs("You can`t spend money, " +
-                                                                         "your balance is negative"));
-                return;
+                InfoAboutDeal.LogToFile(_id, "Недостаточно денег. Вы попытались потратить на " + activity.Name +
+                                             " сумму в ", activity.Price, this);
+                InvalidCardOperation?.Invoke(this, new WalletHandlerArgs("Вы не можете потратить деньги, " +
+                                                                         "у вас на счету нет средств"));
+                throw new InvalidCardOperationException("Недостаточно денег");
             }
 
             _money -= activity.Price;
@@ -47,15 +45,13 @@ namespace Budget
         {
             if (sum > Balance)
             {
-                Logs.LogException(new InvalidAmountException("You don`t have enough money."));
                 InvalidCardOperation?.Invoke(this, new WalletHandlerArgs("Недостаточно денег на счету."));
-                return;
+                throw new InvalidCardOperationException("Недостаточно денег на счету");
             }
 
             if (sum < 0)
             {
-                Logs.LogException(new InvalidAmountException("You can`t get a negative amount of money."));
-                return;
+                throw new InvalidCardOperationException("Нельзя вывести отрицательную сумму");
             }
 
             _money -= sum;
@@ -66,55 +62,41 @@ namespace Budget
         {
             if (activity.Price < 0)
             {
-                Logs.LogException(new InvalidAmountException("Negative price detected"));
-                InvalidCardOperation?.Invoke(this, new WalletHandlerArgs("Price can`t be a negative."));
-                return;
+                InvalidCardOperation?.Invoke(this, new WalletHandlerArgs("Цена не может быть отрицательной"));
+                throw new InvalidCardOperationException("Цена не может быть отрицательной");
             }
 
             Balance += activity.Price;
-            InfoAboutDeal.LogToFile(_id, $"Received from \'{activity.Name}\'", activity.Price, this);
+            InfoAboutDeal.LogToFile(_id, $"Получено от \'{activity.Name}\'", activity.Price, this);
             SuccessfulOperation?.Invoke(this,
-                new WalletHandlerArgs($"On \'{_id}\' card was received {activity.Price} from {activity.Name}"));
+                new WalletHandlerArgs($"На карту \'{_id}\' было получено {activity.Price} от {activity.Name}"));
         }
 
         private event CardsOperation InvalidCardOperation;
         private event CardsOperation SuccessfulOperation;
 
-        // Function that merge two bank accounts.
-        public static BankAccount operator +(BankAccount fst, BankAccount scd)
-        {
-            fst = new BankAccount(fst.Balance + scd.Balance, fst._id);
-            var temp = scd.Balance;
-            scd.Balance = 0;
-            fst.SuccessfulOperation(fst,
-                new WalletHandlerArgs($"All money from \'{scd._id}\' were transferred to \'{fst._id}\'"));
-            InfoAboutDeal.LogToFile(fst._id, $"Received from \'{scd._id}\' card", temp, fst);
-            InfoAboutDeal.LogToFile(scd._id, $"Transferred to \'{fst._id}\' card", temp, scd);
-            return fst;
-        }
 
         public static void Transfer(BankAccount from, BankAccount to, decimal sum)
         {
             if (sum < 0)
             {
-                Logs.LogException(new InvalidAmountException("Not enough money."));
-                from.InvalidCardOperation?.Invoke(from, new WalletHandlerArgs("Not enough money."));
-                return;
+                from.InvalidCardOperation?.Invoke(from, new WalletHandlerArgs("Недостаточно денег"));
+                throw new InvalidCardOperationException("Недостаточно денег");
             }
 
             if (sum > from.Balance)
             {
-                InfoAboutDeal.LogToFile(from._id, $"You tried to transfer to {to._id} card ", sum, from);
-                from.InvalidCardOperation?.Invoke(from, new WalletHandlerArgs("Not enough money."));
+                InfoAboutDeal.LogToFile(from._id, $"Вы попытались перенести на карту \'{to._id}\'", sum, from);
+                from.InvalidCardOperation?.Invoke(from, new WalletHandlerArgs("Недостаточно денег."));
                 return;
             }
 
             to.Balance += sum;
             from.Balance -= sum;
             from.SuccessfulOperation(from,
-                new WalletHandlerArgs($"From \'{from._id}\' about ${sum} was transferred to \'{to._id}\'."));
-            InfoAboutDeal.LogToFile(to._id, $"Received from {from._id}", sum, to);
-            InfoAboutDeal.LogToFile(from._id, $"Transferred to {from._id} about", sum, from);
+                new WalletHandlerArgs($"От \'{from._id}\' было переведено ${sum} на \'{to._id}\'."));
+            InfoAboutDeal.LogToFile(to._id, $"Получено от {from._id}", sum, to);
+            InfoAboutDeal.LogToFile(from._id, $"Переведено на \'{from._id}\' ", sum, from);
         }
 
         private static void Errors(object sender, WalletHandlerArgs handler)

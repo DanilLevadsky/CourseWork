@@ -2,8 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1cfdc6a-3737-4f57-94ea-78871932bd70" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Budget/ActivityOrProduct.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Budget/ActivityOrProduct.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Budget/BankAccount.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Budget/BankAccount.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Budget/bin/Debug/netcoreapp3.1/Budget.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Budget/bin/Debug/netcoreapp3.1/Budget.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Budget/bin/Debug/netcoreapp3.1/Budget.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Budget/bin/Debug/netcoreapp3.1/Budget.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Budget/bin/Debug/netcoreapp3.1/LogsAndExceptions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Budget/bin/Debug/netcoreapp3.1/LogsAndExceptions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Budget/bin/Debug/netcoreapp3.1/LogsAndExceptions.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Budget/bin/Debug/netcoreapp3.1/LogsAndExceptions.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Budget/obj/Debug/netcoreapp3.1/Budget.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Budget/obj/Debug/netcoreapp3.1/Budget.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Budget/obj/Debug/netcoreapp3.1/Budget.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Budget/obj/Debug/netcoreapp3.1/Budget.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Budget/obj/Debug/netcoreapp3.1/Budget.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Budget/obj/Debug/netcoreapp3.1/Budget.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CourseWork/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CourseWork/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CourseWork/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CourseWork/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Budget.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Budget.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Budget.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Budget.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/CourseWork.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/CourseWork.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/CourseWork.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/CourseWork.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/LogsAndExceptions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/LogsAndExceptions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/LogsAndExceptions.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/LogsAndExceptions.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Users.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Users.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Users.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/Users.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/CourseWork.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/CourseWork.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/CourseWork.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/CourseWork.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/CourseWork.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/CourseWork.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LogsAndExceptions/InvalidAmountException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../LogsAndExceptions/InvalidObjectException.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LogsAndExceptions/Logs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../LogsAndExceptions/Logs.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LogsAndExceptions/bin/Debug/netcoreapp3.1/LogsAndExceptions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../LogsAndExceptions/bin/Debug/netcoreapp3.1/LogsAndExceptions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LogsAndExceptions/bin/Debug/netcoreapp3.1/LogsAndExceptions.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../LogsAndExceptions/bin/Debug/netcoreapp3.1/LogsAndExceptions.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LogsAndExceptions/obj/Debug/netcoreapp3.1/LogsAndExceptions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../LogsAndExceptions/obj/Debug/netcoreapp3.1/LogsAndExceptions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LogsAndExceptions/obj/Debug/netcoreapp3.1/LogsAndExceptions.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../LogsAndExceptions/obj/Debug/netcoreapp3.1/LogsAndExceptions.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Users/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/bin/Debug/netcoreapp3.1/Budget.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/bin/Debug/netcoreapp3.1/Budget.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/bin/Debug/netcoreapp3.1/Budget.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/bin/Debug/netcoreapp3.1/Budget.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/bin/Debug/netcoreapp3.1/LogsAndExceptions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/bin/Debug/netcoreapp3.1/LogsAndExceptions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/bin/Debug/netcoreapp3.1/LogsAndExceptions.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/bin/Debug/netcoreapp3.1/LogsAndExceptions.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/bin/Debug/netcoreapp3.1/Users.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/bin/Debug/netcoreapp3.1/Users.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/bin/Debug/netcoreapp3.1/Users.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/bin/Debug/netcoreapp3.1/Users.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/obj/Debug/netcoreapp3.1/Users.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/obj/Debug/netcoreapp3.1/Users.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/obj/Debug/netcoreapp3.1/Users.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/obj/Debug/netcoreapp3.1/Users.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Users/obj/Debug/netcoreapp3.1/Users.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Users/obj/Debug/netcoreapp3.1/Users.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,17 +52,18 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../Budget/IWallet.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../LogsAndExceptions/Logs.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Budget/InfoAboutDeal.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Users/InputHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/231CAC4C-D307-4AEA-83F1-76589F64BFB3/3A4/List.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Users/User.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Budget/BankAccount.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Budget/ActivityOrProduct.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Budget/Wallet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../LogsAndExceptions/InvalidCardOperationException.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Budget/WalletHandlerArgs.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../LogsAndExceptions/InvalidAmountException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../LogsAndExceptions/InvalidObjectException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../LogsAndExceptions/Logs.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Budget/InfoAboutDeal.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/231CAC4C-D307-4AEA-83F1-76589F64BFB3/3A4/List.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -52,19 +90,24 @@
         <option value="$PROJECT_DIR$/../Budget/Wallet.cs" />
         <option value="$PROJECT_DIR$/../Budget/WalletHandlerArgs.cs" />
         <option value="$PROJECT_DIR$/../Budget/NotEnoughMoneyException.cs" />
-        <option value="$PROJECT_DIR$/../Budget/ActivityOrProduct.cs" />
-        <option value="$PROJECT_DIR$/../Budget/BankAccount.cs" />
         <option value="$PROJECT_DIR$/../Budget/IWallet.cs" />
         <option value="$PROJECT_DIR$/../Users/InputHandler.cs" />
         <option value="$PROJECT_DIR$/../LogsAndExceptions/InvalidAmountException.cs" />
         <option value="$PROJECT_DIR$/../LogsAndExceptions/Logs.cs" />
-        <option value="$PROJECT_DIR$/../Users/User.cs" />
+        <option value="$PROJECT_DIR$/../LogsAndExceptions/InvalidObjectException.cs" />
+        <option value="$PROJECT_DIR$/../LogsAndExceptions/InvalidOperationException.cs" />
+        <option value="$PROJECT_DIR$/../LogsAndExceptions/InvalidCardOperationException.cs" />
+        <option value="$PROJECT_DIR$/../Budget/ActivityOrProduct.cs" />
         <option value="$PROJECT_DIR$/Program.cs" />
+        <option value="$PROJECT_DIR$/../Users/User.cs" />
+        <option value="$PROJECT_DIR$/../Budget/BankAccount.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1bLZL5RtMwB27Nx55O3tlVvJANp" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -124,7 +167,7 @@
       <workItem from="1589907655671" duration="5322000" />
       <workItem from="1590230765715" duration="2710000" />
       <workItem from="1590781871469" duration="9833000" />
-      <workItem from="1590836466768" duration="2843000" />
+      <workItem from="1590836466768" duration="12700000" />
     </task>
     <servers />
   </component>
@@ -155,26 +198,26 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="467" y="282" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.1440.900@0.0.1440.900" timestamp="1590840379127" />
-    <state width="1398" height="81" key="GridCell.Tab.0.bottom" timestamp="1590839939868">
+    <state width="1398" height="-12" key="GridCell.Tab.0.bottom" timestamp="1590861221352">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="81" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1590839939868" />
-    <state width="1398" height="160" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1590839778656" />
-    <state width="1398" height="81" key="GridCell.Tab.0.center" timestamp="1590839939866">
+    <state width="1398" height="-12" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1590861221352" />
+    <state width="1398" height="36" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1590857552431" />
+    <state width="1398" height="-12" key="GridCell.Tab.0.center" timestamp="1590861221349">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="81" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1590839939866" />
-    <state width="1398" height="160" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1590839778652" />
-    <state width="1398" height="81" key="GridCell.Tab.0.left" timestamp="1590839939865">
+    <state width="1398" height="-12" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1590861221349" />
+    <state width="1398" height="36" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1590857552425" />
+    <state width="1398" height="-12" key="GridCell.Tab.0.left" timestamp="1590861221347">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="81" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1590839939865" />
-    <state width="1398" height="160" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1590839778650" />
-    <state width="1398" height="81" key="GridCell.Tab.0.right" timestamp="1590839939867">
+    <state width="1398" height="-12" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1590861221347" />
+    <state width="1398" height="36" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1590857552417" />
+    <state width="1398" height="-12" key="GridCell.Tab.0.right" timestamp="1590861221350">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="81" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1590839939867" />
-    <state width="1398" height="160" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1590839778653" />
+    <state width="1398" height="-12" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1590861221350" />
+    <state width="1398" height="36" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1590857552428" />
     <state x="320" y="189" key="Rider.ProjectTemplateDialog.Size" timestamp="1590784744809">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -188,6 +231,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="127" y="12" width="900" height="722" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1590839238973" />
+    <state x="105" y="76" width="1240" height="700" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1590851528534">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state x="105" y="76" width="1240" height="700" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.23.1440.826@0.23.1440.826" timestamp="1590851528534" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1590830637974">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

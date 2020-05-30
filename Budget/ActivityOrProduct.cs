@@ -10,8 +10,8 @@ namespace Budget
             PriceBelowZero = SendMessage;
             if (price < 0)
             {
-                PriceBelowZero?.Invoke(this, "Price can`t be a negative.");
-                Logs.LogException(new InvalidAmountException("Negative price detected."));
+                PriceBelowZero?.Invoke(this, "Цена не может быть отрицательной.");
+                Logs.LogException(new InvalidCardOperationException("Цена не может быть отрицательной."));
                 return;
             }
 

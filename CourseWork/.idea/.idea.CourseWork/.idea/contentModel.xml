@@ -21,7 +21,10 @@
       <e p="WalletHandlerArgs.cs" t="Include" />
     </e>
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
-      <e p="BankCards" t="Include" />
+      <e p="BankCards" t="Include">
+        <e p="qe_info.log" t="Include" />
+        <e p="qwe_info.log" t="Include" />
+      </e>
       <e p="bin" t="ExcludeRecursive" />
       <e p="CourseWork.csproj" t="IncludeRecursive" />
       <e p="CourseWork.sln" t="IncludeFlat" />
@@ -38,7 +41,8 @@
     </e>
     <e p="$PROJECT_DIR$/../LogsAndExceptions" t="IncludeRecursive">
       <e p="bin" t="ExcludeRecursive" />
-      <e p="InvalidAmountException.cs" t="Include" />
+      <e p="InvalidCardOperationException.cs" t="Include" />
+      <e p="InvalidObjectException.cs" t="Include" />
       <e p="Logs.cs" t="Include" />
       <e p="LogsAndExceptions.csproj" t="IncludeRecursive" />
       <e p="obj" t="ExcludeRecursive">
