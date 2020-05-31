@@ -22,7 +22,6 @@
     </e>
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="BankCards" t="Include">
-        <e p="qe_info.log" t="Include" />
         <e p="qwe_info.log" t="Include" />
       </e>
       <e p="bin" t="ExcludeRecursive" />

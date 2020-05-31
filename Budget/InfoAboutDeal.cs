@@ -10,10 +10,10 @@ namespace Budget
             var fileName = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory())?.Parent?.Parent?.FullName,
                 $"BankCards/{card._id}_info.log");
 
-            void WriteToFile(TextWriter sw)
+            async void WriteToFile(TextWriter sw)
             {
-                sw.Write($"{DateTime.Now}\t{name} ${value}\n");
-                sw.Write($"Текущий балланс: {card.Balance}\n\n");
+                await sw.WriteAsync($"{DateTime.Now}\t{name} ${value}\n"
+                + $"Текущий балланс: {card.Balance}\n\n");
             }
 
             if (!File.Exists(fileName))
