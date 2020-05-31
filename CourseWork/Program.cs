@@ -8,14 +8,15 @@ namespace CourseWork
 {
     internal class Program
     {
-        private const string menu = "Выберите что сделать:\n" +
+        private const string Menu = "Выберите что сделать:\n" +
                                     "0 - Выход из программы\n" +
                                     "1 - Добавить новую карту\n" +
                                     "2 - Перевести с карты на карту\n" +
                                     "3 - Потратить деньги\n" +
                                     "4 - Вывести деньги\n" +
                                     "5 - Получить деньги\n" +
-                                    "6 - Информация о картах";
+                                    "6 - Информация о картах\n"+
+                                    "7 - Просмотреть балланс";
 
 
         private static void Main(string[] args)
@@ -26,8 +27,8 @@ namespace CourseWork
                 Console.Write("Введите ваше имя: ");
                 name = Console.ReadLine();
                 if (name?.Trim(' ') != "") continue;
-                Console.WriteLine("Неверные данные.");
-                Logs.LogException(new ArgumentNullException("Empty input."));
+                PrintError("Неверные данные.");
+                Logs.LogException(new ArgumentNullException("Пустые входные данные."));
             }
 
             var usr = new User(name);
@@ -36,7 +37,7 @@ namespace CourseWork
             while (true)
                 try
                 {
-                    Console.WriteLine(menu);
+                    Console.WriteLine(Menu);
                     int key;
                     try
                     {
@@ -64,23 +65,21 @@ namespace CourseWork
                             {
                                 if (usr.IfExist(card))
                                 {
-                                    PrintError("Такая карта уже существуем.");
+                                    PrintError("Карта с таким ID уже существует.");
                                     break;
                                 }
-
                                 usr.AddCard(card);
                                 WriteInfo("Карта успешно создана.");
                             }
-
                             break;
                         case 2:
                             WriteInfo(usr.GetListOfCards());
-
                             var temp = usr.ChooseTwoCards();
+                            WriteInfo($"Текущий балланс карты {temp[0]._id} - {temp[0].Balance}");
+                            WriteInfo($"Текущий балланс карты {temp[1]._id} - {temp[1].Balance}");
                             WriteInfo("Сколько денег хотите передать: ");
                             var money = Convert.ToDecimal(Console.ReadLine());
                             BankAccount.Transfer(temp[0], temp[1], money);
-
                             break;
                         case 3:
                             WriteInfo(usr.GetListOfCards());
@@ -97,20 +96,16 @@ namespace CourseWork
 
                             break;
                         case 4:
-                            decimal m = 0;
-                            WriteInfo($"{name} сколько денег Вы хотите вывести?");
-                            m = Convert.ToDecimal(Console.ReadLine());
-                            if (m.GetType() != typeof(decimal)) throw new ArgumentException("Сумма должна быть числом");
-
-                            if (m < 0) throw new InvalidObjectException("Нельзя вывести отрицательную сумму.");
-
                             WriteInfo(usr.GetListOfCards());
                             WriteInfo("Выберите карту");
-                            var crd = usr.ChooseCard();
-
-                            crd.GetMoney(m);
-
-
+                            card = usr.ChooseCard();
+                            WriteInfo($"Текущий балланс карты - {card.Balance}");
+                            decimal m = 0;
+                            WriteInfo($"{name}, сколько денег Вы хотите вывести?");
+                            m = Convert.ToDecimal(Console.ReadLine());
+                            if (m.GetType() != typeof(decimal)) throw new ArgumentException("Сумма должна быть числом");
+                            if (m < 0) throw new InvalidObjectException("Нельзя вывести отрицательную сумму.");
+                            card.GetMoney(m);
                             break;
                         case 5:
                             if (usr.Count == 0)
@@ -124,6 +119,7 @@ namespace CourseWork
                             card = usr.ChooseCard();
                             if (usr.Cards.Any(x => x._id == card._id))
                             {
+                                WriteInfo($"Текущий балланс карты - {card.Balance}");
                                 Console.WriteLine("Укажите источник денег.");
                                 obj = CreateNewThing();
                                 if (obj == null) break;
@@ -134,6 +130,12 @@ namespace CourseWork
                         case 6:
                             WriteInfo(usr.GetListOfCards());
                             break;
+                        case 7:
+                            WriteInfo(usr.GetListOfCards());
+                            WriteInfo("Выберите карту: ");
+                            card = usr.ChooseCard();
+                            WriteInfo($"Текущий балланс карты {card._id} - {card.Balance}");
+                            break;
                     }
                 }
                 catch (InvalidCardOperationException e)
@@ -143,6 +145,11 @@ namespace CourseWork
                 catch (InvalidObjectException e)
                 {
                     PrintError(e.Message);
+                    Logs.LogException(e);
+                }
+                catch (FormatException e)
+                {
+                    PrintError("Неверные данные.");
                     Logs.LogException(e);
                 }
                 catch (NullReferenceException e)
@@ -175,7 +182,7 @@ namespace CourseWork
             decimal price;
             Console.Write("Введите название предмета/активности: ");
             nameOfActivity = Console.ReadLine();
-            if (nameOfActivity?.Trim(' ') == string.Empty)
+            if (nameOfActivity?.Trim(' ') == "")
                 throw new InvalidObjectException("Не удалось идентифицировать предмет/услугу");
             Console.Write("Введите цену услуги: ");
             strPrice = Console.ReadLine();

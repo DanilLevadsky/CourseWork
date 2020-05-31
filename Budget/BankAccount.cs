@@ -39,7 +39,7 @@ namespace Budget
             }
 
             _money -= activity.Price;
-            InfoAboutDeal.LogToFile(_id, activity.Name, activity.Price, this);
+            InfoAboutDeal.LogToFile(_id, $"Потрачено на {activity.Name}. Сумма - ", activity.Price, this);
         }
 
         public void GetMoney(decimal sum)
@@ -53,7 +53,7 @@ namespace Budget
             if (sum < 0) throw new InvalidCardOperationException("Нельзя вывести отрицательную сумму");
 
             _money -= sum;
-            InfoAboutDeal.LogToFile(_id, "You withdrew ", sum, this);
+            InfoAboutDeal.LogToFile(_id, "Вы вывели ", sum, this);
         }
 
         public void AddMoney(ActivityOrProduct activity)
