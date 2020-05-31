@@ -21,6 +21,7 @@ namespace CourseWork
 
         private static void Main(string[] args)
         {
+            
             var name = string.Empty;
             while (name?.Trim(' ') == "")
             {

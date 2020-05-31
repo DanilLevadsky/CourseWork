@@ -54,6 +54,7 @@ namespace Budget
 
             _money -= sum;
             InfoAboutDeal.LogToFile(_id, "Вы вывели ", sum, this);
+            SuccessfulOperation?.Invoke(this,new WalletHandlerArgs($"Вы вывели ${sum}"));
         }
 
         public void AddMoney(ActivityOrProduct activity)
@@ -96,6 +97,8 @@ namespace Budget
                 new WalletHandlerArgs($"От \'{from._id}\' было переведено ${sum} на \'{to._id}\'."));
             InfoAboutDeal.LogToFile(to._id, $"Получено от {from._id}", sum, to);
             InfoAboutDeal.LogToFile(from._id, $"Переведено на \'{from._id}\' ", sum, from);
+            from.SuccessfulOperation?.Invoke(from,
+                new WalletHandlerArgs($"С карты {from._id} на карту {to._id} было переведено ${sum}"));
         }
 
         private static void Errors(object sender, WalletHandlerArgs handler)
