@@ -78,7 +78,8 @@ namespace Budget
         {
             if (sum < 0)
             {
-                from.InvalidCardOperation?.Invoke(from, new WalletHandlerArgs("Сумма должна быть положительным числом"));
+                from.InvalidCardOperation?.Invoke(from,
+                    new WalletHandlerArgs("Сумма должна быть положительным числом"));
                 throw new InvalidCardOperationException("Сумма должна быть положительным числом");
             }
 

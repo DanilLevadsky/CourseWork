@@ -6,7 +6,7 @@ using Users;
 
 namespace CourseWork
 {
-    internal class Program
+    internal static class Program
     {
         private const string Menu = "Выберите что сделать:\n" +
                                     "0 - Выход из программы\n" +
@@ -15,7 +15,7 @@ namespace CourseWork
                                     "3 - Потратить деньги\n" +
                                     "4 - Вывести деньги\n" +
                                     "5 - Получить деньги\n" +
-                                    "6 - Информация о картах\n"+
+                                    "6 - Информация о картах\n" +
                                     "7 - Просмотреть балланс";
 
 
@@ -68,9 +68,11 @@ namespace CourseWork
                                     PrintError("Карта с таким ID уже существует.");
                                     break;
                                 }
+
                                 usr.AddCard(card);
                                 WriteInfo("Карта успешно создана.");
                             }
+
                             break;
                         case 2:
                             WriteInfo(usr.GetListOfCards());
