@@ -87,7 +87,8 @@ namespace CourseWork
                         case 3:
                             WriteInfo(usr.GetListOfCards());
                             WriteInfo("Выберите карту: ");
-                            var c = usr.ChooseCard();
+                            card = usr.ChooseCard();
+                            WriteInfo($"Текущий балланс карты - {card.Balance}");
                             obj = CreateNewThing();
                             if (obj == null)
                             {
@@ -95,7 +96,7 @@ namespace CourseWork
                                 break;
                             }
 
-                            c.SpendMoney(obj);
+                            card.SpendMoney(obj);
 
                             break;
                         case 4:

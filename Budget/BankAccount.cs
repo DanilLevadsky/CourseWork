@@ -40,6 +40,8 @@ namespace Budget
 
             _money -= activity.Price;
             InfoAboutDeal.LogToFile(_id, $"Потрачено на {activity.Name}. Сумма - ", activity.Price, this);
+            SuccessfulOperation?.Invoke(this,
+                new WalletHandlerArgs($"Вы потратили ${activity.Price} на {activity.Name}"));
         }
 
         public void GetMoney(decimal sum)
@@ -66,7 +68,7 @@ namespace Budget
             }
 
             Balance += activity.Price;
-            InfoAboutDeal.LogToFile(_id, $"Получено от \'{activity.Name}\'", activity.Price, this);
+            InfoAboutDeal.LogToFile(_id, $"Получено от \'{activity.Name}\'. Cумма - ", activity.Price, this);
             SuccessfulOperation?.Invoke(this,
                 new WalletHandlerArgs($"На карту \'{_id}\' было получено {activity.Price} от {activity.Name}"));
         }
